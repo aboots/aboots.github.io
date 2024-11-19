@@ -2,6 +2,15 @@
 main:
   - title: "Education"
     url: /education/
+
+  - title: "Research & Publications"
+    url: /research/
+
+  - title: "Teaching Assistant Experience"
+    url: /teaching-assistant/  
     
-  - title: "CV"
-    url: /cv/
+  - title: "Honors & Activities"
+    url: /honors-activities/
+        
+  - title: "Projects"
+    url: /projects/

@@ -16,7 +16,10 @@ ul.twocol { width: 110%; }
 </style>
 
 <p style="text-align: justify;">
-<b>Hello!</b> My name is Mohammad Mahdi Abootorabi. I recently completed my Bachelor’s degree in Computer Engineering from the <a href="https://en.sharif.edu/"> Sharif University of Technology</a>, which is recognized as one of the premier universities in Iran and the Middle East. I will be starting my graduate studies in the coming months.
+<b>Hello!</b> My name is Mohammad Mahdi Abootorabi. I recently completed my Bachelor’s degree in Computer Engineering from the <a href="https://en.sharif.edu/"> Sharif University of Technology</a>, which is recognized as one of the premier universities in Iran and the Middle East. 
+
+I will be starting my graduate studies in the coming months.
+
 My fields of interest are: 
 </p>
 

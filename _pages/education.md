@@ -23,7 +23,16 @@ B.Sc., **Computer Engineering**
   - Artificial Intelligence: 4/4 (20/20)
   - Linear Algebra: 4/4 (20/20)
   
----
+
+## [**Allameh Helli 10 High School (NODET)**](https://helli10.ir/), Tehran, Iran
+
+High School Diploma, **Mathematics and Physics**.
+
+*Sep. 2016 – Jul. 2019*
+
+- Total GPA: 4/4 (19.81/20)
+
+--
 
 ## **English Proficiency**
 
@@ -49,13 +58,3 @@ B.Sc., **Computer Engineering**
 - Verbal Reasoning:: 148/170
 - Analytical Writing: 4
   
----
-
-## [**Allameh Helli 10 High School (NODET)**](https://helli10.ir/), Tehran, Iran
-
-High School Diploma, **Mathematics and Physics**.
-
-*Sep. 2016 – Jul. 2019*
-
-- Total GPA: 4/4 (19.81/20)
-
