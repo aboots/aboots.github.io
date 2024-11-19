@@ -32,7 +32,7 @@ High School Diploma, **Mathematics and Physics**.
 
 - Total GPA: 4/4 (19.81/20)
 
---
+---
 
 ## **English Proficiency**
 
