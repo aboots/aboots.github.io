@@ -38,11 +38,7 @@ seo_author = page.author | default: page.author[0] | default: site.author[0] %} 
     {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "url": {
-            {
-                seo_url | jsonify
-            }
-        },
+        "url": "{{ seo_url | jsonify }}",
         "logo": {
             {
                 site.og_image | prepend: "/images/" | prepend: base_path | jsonify
@@ -56,16 +52,8 @@ seo_author = page.author | default: page.author[0] | default: site.author[0] %} 
         "@context": "http://schema.org",
         "@type": "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
         "name": "{{ site.social.name | default: site.name }}",
-        "url": {
-            {
-                seo_url | jsonify
-            }
-        },
-        "sameAs": {
-            {
-                site.social.links | jsonify
-            }
-        }
+        "url": "{{ seo_url | jsonify }}",
+        "sameAs": "{{ site.social.links | jsonify }}"
     }
 </script>
 {% endif %} {% if site.google_site_verification %}
