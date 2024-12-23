@@ -24,7 +24,7 @@ B.Sc., **Computer Engineering**
   - Linear Algebra: 20/20
   
 
-## [**Allameh Helli 10 High School (NODET)**](https://helli10.ir/), Tehran, Iran
+## [**Allameh Helli 10 High School**](https://helli10.ir/), Tehran, Iran
 
 High School Diploma, **Mathematics and Physics**.
 
