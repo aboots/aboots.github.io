@@ -20,7 +20,7 @@ B.Sc., **Computer Engineering**
   - Natural Language Processing: 20/20
   - Machine Learning: 20/20
   - Modern Information Retrieval: 20/20
-  - Artificial Intelligence: 0/20
+  - Artificial Intelligence: 20/20
   - Linear Algebra: 20/20
   
 
