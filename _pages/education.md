@@ -11,17 +11,17 @@ B.Sc., **Computer Engineering**
 
 *Sep. 2019 – Feb. 2024*
 
-- Total GPA: 3.97/4 (19.38/20)
+- Total GPA: 19.38/20
 
-- Major GPA: 3.97/4 (19.73/20)
+- Major GPA: 19.73/20
   
 - Highlighted Courses:
 
-  - Natural Language Processing: 4/4 (20/20)
-  - Machine Learning: 4/4 (20/20)
-  - Modern Information Retrieval: 4/4 (20/20)
-  - Artificial Intelligence: 4/4 (20/20)
-  - Linear Algebra: 4/4 (20/20)
+  - Natural Language Processing: 20/20
+  - Machine Learning: 20/20
+  - Modern Information Retrieval: 20/20
+  - Artificial Intelligence: 0/20
+  - Linear Algebra: 20/20
   
 
 ## [**Allameh Helli 10 High School (NODET)**](https://helli10.ir/), Tehran, Iran
