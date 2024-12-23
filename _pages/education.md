@@ -48,7 +48,7 @@ High School Diploma, **Mathematics and Physics**.
   
 ---
 
-## [**GRE Exam**]
+## **GRE Exam**
 
 [**GRE General Exam**](https://www.ets.org/gre.html)
 
