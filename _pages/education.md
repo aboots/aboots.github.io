@@ -30,7 +30,7 @@ High School Diploma, **Mathematics and Physics**.
 
 *Sep. 2016 – Jul. 2019*
 
-- Total GPA: 4/4 (19.81/20)
+- Total GPA: 19.81/20
 
 ---
 
