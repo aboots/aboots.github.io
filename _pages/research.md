@@ -28,6 +28,26 @@ _Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/cit
 
 ---
 
+## Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation
+
+**M. M. Abootorabi, A. Zobeiri, M. Dehghani, M. Mohammadkhani, B. Mohammadi, O. Ghahroodi, M. S. Baghshah, and E. Asgari. Ask in any modality: A comprehensive survey on multimodal retrieval‑augmented generation. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025), (submitted)**
+
+[Preprint Link](https://arxiv.org/abs/2502.08826) &nbsp;&nbsp;&nbsp; [Github Repository](https://github.com/llm-lab-org/Multimodal-RAG-Survey)
+    
+A comprehensive survey on Multimodal RAG systems, covering datasets, benchmarks, metrics, evaluation, methodologies, and innovations in retrieval, fusion, augmentation, and generation. We precisely review training strategies, robustness enhancements, and loss functions, while also exploring the diverse Multimodal RAG scenarios. In addition, we outline open challenges and future directions to guide research in this evolving field.
+
+Contributions:
+- Provide a comprehensive review of the multimodal RAG field, covering task formulation, datasets, benchmarks, tasks and domain-specific applications, evaluation, and key innovations across retrieval, fusion, augmentation, generation, training strategies, and loss functions.
+- Introduce a precise structured taxonomy that categorizes state-of-the-art models based on their primary contributions, highlighting methodological advancements and emerging frontiers.
+- To support further research, we make resources, including datasets, benchmarks, and key innovations, publicly available.
+- Identify current research trends and knowledge gaps, providing insights and recommendations to guide future advancements in this evolving field.
+
+_Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/citations?user=lIVvIFsAAAAJ&hl=en) and Prof. [Mahdieh Soleymani Baghshah](https://scholar.google.com/citations?hl=en&user=S1U0KlgAAAAJ&view_op=list_works&sortby=pubdate)_
+
+*July. 2024 – Feb. 2025*
+
+---
+
 ## Emotion Classification in Code‑Mixed Conversations and Multimodal Emotion Cause Pair Extraction Within Conversational Contexts
 
 **M. M. Abootorabi, N. Ghazizadeh, S. A. Dalili, A. Ghahramani Kure, M. Dehghani, and E. Asgari. AIMA at SemEval‑2024 task 10: History‑based emotion recognition in Hindi‑English code‑mixed conversations. In Proceedings of the 18th International Workshop on Semantic Evaluation (SemEval‑2024), pages 1704–1710, Mexico City, Mexico, June 2024. Association for Computational Linguistics** &nbsp;&nbsp;&nbsp; [Paper Link](https://aclanthology.org/2024.semeval-1.244/)
