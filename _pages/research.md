@@ -30,7 +30,7 @@ _Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/cit
 
 ## Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation
 
-**M. M. Abootorabi, A. Zobeiri, M. Dehghani, M. Mohammadkhani, B. Mohammadi, O. Ghahroodi, M. S. Baghshah, and E. Asgari. Ask in any modality: A comprehensive survey on multimodal retrieval‑augmented generation. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025), (submitted)**
+**M. M. Abootorabi, A. Zobeiri, M. Dehghani, M. Mohammadkhani, B. Mohammadi, O. Ghahroodi, M. S. Baghshah, and E. Asgari. Ask in any modality: A comprehensive survey on multimodal retrieval‑augmented generation. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025), Vienna, Austria, July 2025. (submitted)**
 
 [Preprint Link](https://arxiv.org/abs/2502.08826) &nbsp;&nbsp;&nbsp; [Github Repository](https://github.com/llm-lab-org/Multimodal-RAG-Survey)
     
