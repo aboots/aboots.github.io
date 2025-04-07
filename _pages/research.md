@@ -7,9 +7,9 @@ author_profile: true
 ## CLASP: Contrastive Language-Speech Pretraining for Multilingual Multimodal Information Retrieval
 
 **M. M. Abootorabi and E. Asgari. Clasp: Contrastive language‑speech pretraining for multilingual multimodal information
-retrieval. In 47th European Conference on Information Retrieval (ECIR2025), Lucca, Italy, April 2025. (accepted, to be published)**
+retrieval. In 47th European Conference on Information Retrieval (ECIR2025), Lucca, Italy, April 2025.**
 
-[Paper Link](https://arxiv.org/abs/2412.13071v1) &nbsp;&nbsp;&nbsp; [Code](https://github.com/language-modeling-lab/CLASP) &nbsp;&nbsp;&nbsp; [Models](https://huggingface.co/llm-lab/CLASP) &nbsp;&nbsp;&nbsp; [Newly Introduced Dataset](https://huggingface.co/datasets/llm-lab/SpeechBrown)
+[Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-88717-8_2) &nbsp;&nbsp;&nbsp; [arXiv Link](https://arxiv.org/abs/2412.13071v1) &nbsp;&nbsp;&nbsp; [Code](https://github.com/language-modeling-lab/CLASP) &nbsp;&nbsp;&nbsp; [Models](https://huggingface.co/llm-lab/CLASP) &nbsp;&nbsp;&nbsp; [Newly Introduced Dataset](https://huggingface.co/datasets/llm-lab/SpeechBrown)
     
 CLASP is a multilingual, multimodal representation model designed for audio-text information retrieval. It uses contrastive learning to bridge the gap between language and speech domains and is trained on a diverse speech-text dataset. The model sets new benchmarks in retrieval metrics across multiple languages. It created the shared embedding space for speech and text modalities to bypass the need for Automatic Speech Recognition (ASR) models in several tasks by following these steps:
 
