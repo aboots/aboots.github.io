@@ -9,7 +9,7 @@ author_profile: true
 **M. M. Abootorabi and E. Asgari. Clasp: Contrastive language‑speech pretraining for multilingual multimodal information
 retrieval. In 47th European Conference on Information Retrieval (ECIR2025), Lucca, Italy, April 2025.**
 
-[Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-88717-8_2) &nbsp;&nbsp;&nbsp; [arXiv Link](https://arxiv.org/abs/2412.13071v1) &nbsp;&nbsp;&nbsp; [Code](https://github.com/language-modeling-lab/CLASP) &nbsp;&nbsp;&nbsp; [Models](https://huggingface.co/llm-lab/CLASP) &nbsp;&nbsp;&nbsp; [Newly Introduced Dataset](https://huggingface.co/datasets/llm-lab/SpeechBrown)
+[Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-88717-8_2) &nbsp;&nbsp;&nbsp; [arXiv Link](https://arxiv.org/abs/2412.13071v1) &nbsp;&nbsp;&nbsp; [Code](https://github.com/language-modeling-lab/CLASP) &nbsp;&nbsp;&nbsp; [Models](https://huggingface.co/llm-lab/CLASP) &nbsp;&nbsp;&nbsp; [Newly Introduced Dataset](https://huggingface.co/datasets/llm-lab/SpeechBrown) &nbsp;&nbsp;&nbsp; [ACM Digital Library](https://dl.acm.org/doi/10.1007/978-3-031-88717-8_2) &nbsp;&nbsp;&nbsp; [Website](https://clasp1.github.io/)
     
 CLASP is a multilingual, multimodal representation model designed for audio-text information retrieval. It uses contrastive learning to bridge the gap between language and speech domains and is trained on a diverse speech-text dataset. The model sets new benchmarks in retrieval metrics across multiple languages. It created the shared embedding space for speech and text modalities to bypass the need for Automatic Speech Recognition (ASR) models in several tasks by following these steps:
 
@@ -32,7 +32,7 @@ _Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/cit
 
 **M. M. Abootorabi, A. Zobeiri, M. Dehghani, M. Mohammadkhani, B. Mohammadi, O. Ghahroodi, M. S. Baghshah, and E. Asgari. Ask in any modality: A comprehensive survey on multimodal retrieval‑augmented generation. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025), Vienna, Austria, July 2025. (submitted)**
 
-[Preprint Link](https://arxiv.org/abs/2502.08826) &nbsp;&nbsp;&nbsp; [Github Repository](https://github.com/llm-lab-org/Multimodal-RAG-Survey)
+[Preprint Link](https://arxiv.org/abs/2502.08826) &nbsp;&nbsp;&nbsp; [Github Repository](https://github.com/llm-lab-org/Multimodal-RAG-Survey) &nbsp;&nbsp;&nbsp; [Website](https://multimodalrag.github.io/)
     
 A comprehensive survey on Multimodal RAG systems, covering datasets, benchmarks, metrics, evaluation, methodologies, and innovations in retrieval, fusion, augmentation, and generation. We precisely review training strategies, robustness enhancements, and loss functions, while also exploring the diverse Multimodal RAG scenarios. In addition, we outline open challenges and future directions to guide research in this evolving field.
 
