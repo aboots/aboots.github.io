@@ -7,8 +7,8 @@ author_profile: true
 
 ## Honors
 <ul>
-<li><b>Ranked 10th</b> among nearly 165,000 participants in the nation-wide <a href="https://en.wikipedia.org/wiki/Iranian_University_Entrance_Exam">University Entrance Exam (Konkour)</a> in the mathematics branch, earning a fully-funded BSc period in Iran. &nbsp; <i>(Summer 2019)</i></li>
-<li><b>Allameh Helli high school admission</b>, among nearly 80,000 students. &nbsp; <i>(Summer 2013)</i></li>
+<li><b>Ranked 10th</b> among nearly 165,000 participants in the nationwide <a href="https://en.wikipedia.org/wiki/Iranian_University_Entrance_Exam">University Entrance Exam (Konkour)</a> in the Mathematics Branch, securing a fully funded B.Sc. (tuition fee waiver) period in Iran. &nbsp; <i>(Summer 2019)</i></li>
+<li><b>Admitted to Allameh Helli Middle School</b>, among nearly 80,000 students under the supervision of the National Organization for Developing Exceptional Talents (NODET). &nbsp; <i>(Summer 2013)</i></li>
 <li><b>Ranked in the top 9%</b>, of Computer Engineering students based on total GPA at <a href="https://en.sharif.edu/"> Sharif University of Technology </a> (<b>16</b> out of 190). &nbsp; <i>(Winter 2024)</i></li>
 
 </ul>
