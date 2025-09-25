@@ -16,9 +16,9 @@ ul.twocol { width: 110%; }
 </style>
 
 <p style="text-align: justify;">
-<b>Hello!</b> My name is Mohammad Mahdi Abootorabi. I recently completed my Bachelor’s degree in Computer Engineering from the <a href="https://en.sharif.edu/"> Sharif University of Technology</a>, which is recognized as one of the premier universities in Iran and the Middle East.
+<b>Hello!</b> My name is Mohammad Mahdi Abootorabi. I am a first-year Master’s student in Electrical and Computer Engineering at the <a href="https://ece.ubc.ca/">University of British Columbia</a>, where I am supervised by <a href="https://ece.ubc.ca/purang-abolmaesumi/">Professor Purang Abolmaesumi</a>. 
+I completed my Bachelor’s degree in Computer Engineering at the <a href="https://en.sharif.edu/">Sharif University of Technology</a>, one of the premier universities in Iran and the Middle East.
 <br>
-I will start my graduate studies in the coming months.
 <br>
 
 <br>
@@ -29,6 +29,6 @@ My fields of interest are:
 <ul style="margin-top: -1%;" markdown='1'>
 <li> Multimodal Learning</li>
 <li> Natural Language Processing (NLP)</li>
-<li> Modern Information Retrieval </li>
 <li> AI for Healthcare </li>
+<li>Information Retrieval </li>
 </ul>
