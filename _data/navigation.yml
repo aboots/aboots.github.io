@@ -14,3 +14,6 @@ main:
         
   - title: "Selected Projects"
     url: /projects/
+
+  - title: "CV"
+    url: /cv/
