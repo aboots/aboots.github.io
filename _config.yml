@@ -82,8 +82,9 @@ analytics:
 author:
   name             : "Mohammad Mahdi Abootorabi"
   avatar           : "aboots.png"
-  bio              : "Graduated B.Sc Student in Computer Engineering at Sharif University of Technology <br><br> <a href='https://en.sharif.edu/'><img src='/images/sharif.png' style='width: 20%; height: 20%;' /></a>"
-  location         : 
+  # bio              : "Graduated B.Sc Student in Computer Engineering at Sharif University of Technology <br><br> <a href='https://en.sharif.edu/'><img src='/images/sharif.png' style='width: 20%; height: 20%;' /></a>"
+  bio              : "Master of Applied Science in Electrical and Computer Engineering at UBC <br><br> <a href='https://en.sharif.edu/'><img src='/images/ubc.png' style='width: 20%; height: 20%;' /></a>""
+  location         : "Vancouver, BC"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=EM1ux2sAAAAJ&hl=en"
