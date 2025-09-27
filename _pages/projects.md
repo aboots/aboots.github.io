@@ -29,7 +29,6 @@ author_profile: true
   <tr>
     <td><img src="/images/projects/content_management.png" width="350"><br><a href="https://github.com/aboots/content-management">Content Management System</a><br> This project is a versatile content management system that allows you to create and manage various types of libraries (videos, music, books, pictures) and share them with your friends.</td>
     <td><img src="/images/projects/text_exploration.png" width="350"><br><a href="https://github.com/aboots/text_exploration">Text Exploration</a><br> This project involves the crawling, exploration, and analysis of text from two websites, Zoomg and Skysports, using NLP methods to extract meaningful insights.</td>
-    <td><img src="/images/projects/sdn.png" width="480"><br><a href="https://github.com/aboots/SDN_Simulator">Software Defined Network (SDN) Simulator</a><br> This project simulates a Software Defined Network (SDN) using Python, employing Mininet for node and topology simulation and Floodlight controllers for network management.</td>
   </tr>
 </table>
 
