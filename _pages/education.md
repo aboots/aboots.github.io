@@ -5,6 +5,14 @@ permalink: /education/
 author_profile: true
 ---
 
+## [**The University of British Columbia**](https://www.ubc.ca/), Vancouver, Canada
+
+MASc, **Electrical and Computer Engineering**
+
+Supervisor: [**Professor Purang Abolmaesumi**](https://ece.ubc.ca/purang-abolmaesumi/)
+
+*Sep. 2025 – Aug. 2027 (expected)*
+
 ## [**Sharif University of Technology**](https://en.sharif.edu/), Tehran, Iran
 
 B.Sc., **Computer Engineering**
