@@ -12,6 +12,7 @@ MASc, **Electrical and Computer Engineering**
 Supervisor: [**Professor Purang Abolmaesumi**](https://ece.ubc.ca/purang-abolmaesumi/)
 
 *Sep. 2025 – Aug. 2027 (expected)*
+- GPA: 96% (Average: A+)
 
 ## [**Sharif University of Technology**](https://en.sharif.edu/), Tehran, Iran
 
