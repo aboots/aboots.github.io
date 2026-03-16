@@ -60,16 +60,6 @@ _Remote Research Assistant_
 
 ---
 
-### Imperial College London
-
-_Remote Research Assistant (Voluntary, Unpaid)_
-
-- Designed an LLM-based Persian therapist Agent incorporating the Self-Attachment Technique (SAT), achieving superior performance over baseline LLMs.
-
-*Sep. 2024 – Sep. 2025* &nbsp; | &nbsp; Supervisor: Prof. Abbas Edalat
-
----
-
 ### Yektanet Technology Company
 
 _Software Engineer_
@@ -86,6 +76,14 @@ _Software Engineer_
 ---
 
 ## Volunteer Activities
+
+### Reviewer — ACM Transactions on Intelligent Systems and Technology & MICCAI 2026
+
+Conducted peer reviews for ACM Transactions on Intelligent Systems and Technology and MICCAI 2026, evaluating technical novelty, methodology, and experimental validity of submitted manuscripts.
+
+*Fall 2025*
+
+---
 
 ### Volunteer Staff at ACL 2025 Conference
 
