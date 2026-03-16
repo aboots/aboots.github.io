@@ -6,8 +6,27 @@ permalink: /teaching-assistant/
 author_profile: true
 
 ---
+---
+layout: archive
+title: ""
+permalink: /teaching-assistant/
+author_profile: true
+---
 
-## Teaching Assistant Experience
+## Teaching Assistant Experience at the University of British Columbia
+
+- **CPSC 319 – Software Engineering Project (Winter 2025)**
+  - Working with Benevity to guide three student groups in delivering real-world agentic AI products, with weekly standups and milestone planning sessions
+  - Serving as a bridge between the company and students to ensure clear communication and successful project delivery
+  - Grading presentations and documentation throughout the term
+
+- **APSC 160 – Introduction to Computation in Engineering Design (Winter 2025)**
+  - Running weekly lab sessions to provide students with additional materials and hands-on practice in C programming
+  - Administering and invigilating lab exams, and grading midterm assessments
+
+---
+
+## Teaching Assistant Experience at Sharif University of Technology
 
 - **Modern Information Retrieval, (Fall 2023, Spring 2023, & Fall 2022)**
   - Designing & grading a practical assignment about text classification, text clustering, and pre-trained large language model embeddings
