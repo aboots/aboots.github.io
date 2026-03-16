@@ -4,8 +4,39 @@ title: ""
 permalink: /research/
 author_profile: true
 ---
+## Publications
 
-## Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation
+- **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://drive.google.com/file/d/1nDYQGEdBNzbiyfVHs8vfCDiNEBbJBLKP/view?usp=sharing)
+
+- **Mohammad Mahdi Abootorabi\***, Omid Ghahroodi\*, Marzia Nouri, Anas Madkoor, Doratossadat Dastgheib, and Ehsaneddin Asgari. BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models. *Submitted to ACL 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/1jRMHMwKcNEco5wxJYpVh_ecFiJST6wA6/view?usp=sharing)
+
+- **Mohammad Mahdi Abootorabi**, Sina Namazi, Armin Saadat Boroujeni, Lyuyang Wang, Obed Dzikunu, Paul F. R. Wilson, Zhuoxin Guo, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/13ILcEZKeqXjs9x_8mwkX2n5EThG1RB80/view?usp=sharing)
+
+- Lyuyang Wang, **Mohammad Mahdi Abootorabi**, Armin Saadat, Victoria Wu, Nima Hashemi, Samira Sojoudi, Xiangteng He, Leonid Sigal, Christina Luong, Teresa Tsang, and Purang Abolmaesumi. EchoAFR: Echocardiography Multi-Video Report Generation through Anatomical and Functional Aware Hierarchical Q-Former. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/11Q20FqN9HqPi1ZALrpEwTCiuSKJ5DPi0/view?usp=sharing)
+
+- Obed Dzikunu, Emma Willis, Mohamed Harmanani, Tarek Elghareb, **Mohammad Mahdi Abootorabi**, Paul F. R. Wilson, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. AlignUS: Unpaired Multimodal Knowledge Distillation for Prostate Cancer Detection in Micro Ultrasound. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/1azRiqov8IeeLSjITr_BVSSlSwcKWNzGl/view?usp=sharing)
+ 
+- Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IPCAI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2602.19005)
+
+- Sina Elahimanesh, Mohammadali Mohammadkhani, Sara Zahedi Movahed, **Mohammad Mahdi Abootorabi**, Shayan Salehi, and Abbas Edalat. Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots. *Submitted to ACM CUI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2603.00774)
+
+- **Mohammad Mahdi Abootorabi**, Amirhosein Zobeiri, Mahdi Dehghani, Mohammadali Mohammadkhani, Bardia Mohammadi, Omid Ghahroodi, Mahdieh Soleymani Baghshah, and Ehsaneddin Asgari. Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation. *Findings of ACL 2025*, July 2025. 86 Citations · 485 GitHub Stars. &nbsp; [ACL Anthology](https://aclanthology.org/2025.findings-acl.861/) &nbsp; [GitHub](https://github.com/llm-lab-org/Multimodal-RAG-Survey) &nbsp; [Website](https://multimodalrag.github.io/)
+
+- **Mohammad Mahdi Abootorabi** and Ehsaneddin Asgari. CLASP: Contrastive Language-Speech Pretraining for Multilingual Multimodal Information Retrieval. *ECIR 2025*, April 2025. &nbsp; [arXiv](https://arxiv.org/abs/2412.13071) &nbsp; [ACM Digital Library](https://dl.acm.org/doi/10.1007/978-3-031-88717-8_2) &nbsp; [Website](https://clasp1.github.io/) &nbsp; [Models](https://huggingface.co/llm-lab/CLASP) &nbsp; [Dataset](https://huggingface.co/datasets/llm-lab/SpeechBrown) &nbsp; [Code](https://github.com/language-modeling-lab/CLASP)
+
+- **Mohammad Mahdi Abootorabi\***, Alireza Ghahramani Kure\*, Mohammadali Mohammadkhani, Sina Elahimanesh, and Mohammad Ali Ali Panah. MultiMind at SemEval-2025 Task 7: Crosslingual Fact-Checked Claim Retrieval via Multi-Source Alignment. *SemEval at ACL 2025*, July 2025. &nbsp; [ACL Anthology](https://aclanthology.org/2025.semeval-1.303/)
+
+- **Mohammad Mahdi Abootorabi**, Omid Ghahroodi, Pardis Sadat Zahraei, Hossein Behzadasl, Alireza Mirrokni, Mobina Salimipanah, Arash Rasouli, Bahar Behzadipour, Sara Azarnoush, Benyamin Maleki, Erfan Sadraiye, Kiarash Kiani Feriz, Mahdi Teymouri Nahad, Ali Moghadasi, Abolfazl Eshagh Abianeh, Nizi Nazar, Hamid R. Rabiee, Mahdieh Soleymani Baghshah, Meisam Ahmadi, and Ehsaneddin Asgari. Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions. May 2025. 13 Citations. &nbsp; [arXiv](https://arxiv.org/abs/2504.19056) &nbsp; [GitHub](https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey) &nbsp; [Website](https://generative-ai-for-character-animation.github.io/)
+
+- **Mohammad Mahdi Abootorabi**, Nona Ghazizadeh, Seyed Arshan Dalili, Alireza Ghahramani Kure, Mahshid Dehghani, and Ehsaneddin Asgari. AIMA at SemEval-2024 Task 10: History-Based Emotion Recognition in Hindi-English Code-Mixed Conversations. *SemEval at NAACL 2024*, June 2024. &nbsp; [ACL Anthology](https://aclanthology.org/2024.semeval-1.244/)
+
+- Alireza Ghahramani Kure, Mahshid Dehghani, **Mohammad Mahdi Abootorabi**, Nona Ghazizadeh, Seyed Arshan Dalili, and Ehsaneddin Asgari. AIMA at SemEval-2024 Task 3: Simple Yet Powerful Emotion Cause Pair Analysis. *SemEval at NAACL 2024*, June 2024. &nbsp; [ACL Anthology](https://aclanthology.org/2024.semeval-1.243/)
+
+
+---
+## Selected Research Projects
+
+### Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation
 
 **M. M. Abootorabi, A. Zobeiri, M. Dehghani, M. Mohammadkhani, B. Mohammadi, O. Ghahroodi, M. S. Baghshah, and E. Asgari. Ask in any modality: A comprehensive survey on multimodal retrieval‑augmented generation. In the Findings of the Association for Computational Linguistics: ACL 2025, pages 16776–16809, Vienna, Austria, July 2025**
 
@@ -24,7 +55,7 @@ _Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/cit
 *July. 2024 – Feb. 2025*
 
 ---
-## CLASP: Contrastive Language-Speech Pretraining for Multilingual Multimodal Information Retrieval
+### CLASP: Contrastive Language-Speech Pretraining for Multilingual Multimodal Information Retrieval
 
 **M. M. Abootorabi and E. Asgari. Clasp: Contrastive language‑speech pretraining for multilingual multimodal information
 retrieval. In the 47th European Conference on Information Retrieval (ECIR2025), Lucca, Italy, April 2025.**
@@ -48,7 +79,7 @@ _Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/cit
 
 ---
 
-## Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions
+### Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions
 
 **M. M. Abootorabi, O. Ghahroodi, P. S. Zahraei, H. Behzadasl, A. Mirrokni, M. Salimipanah, A. Rasouli, B. Behzadipour, S. Azarnoush, B. Maleki, E. Sadraiye, K. K. Feriz, M. T. Nahad, A. Moghadasi, A. E. Abianeh, N. Nazar, H. R. Rabiee, M. S. Baghshah, M. Ahmadi, and E. Asgari. Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions, May 2025**
 
@@ -69,7 +100,7 @@ _Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/cit
 
 ---
 
-## Emotion Classification in Code‑Mixed Conversations and Multimodal Emotion Cause Pair Extraction Within Conversational Contexts
+### Emotion Classification in Code‑Mixed Conversations and Multimodal Emotion Cause Pair Extraction Within Conversational Contexts
 
 **M. M. Abootorabi, N. Ghazizadeh, S. A. Dalili, A. Ghahramani Kure, M. Dehghani, and E. Asgari. AIMA at SemEval‑2024 task 10: History‑based emotion recognition in Hindi‑English code‑mixed conversations. In Proceedings of the 18th International Workshop on Semantic Evaluation (SemEval‑2024), pages 1704–1710, Mexico City, Mexico, June 2024. Association for Computational Linguistics** &nbsp;&nbsp;&nbsp; [Paper Link](https://aclanthology.org/2024.semeval-1.244/)
 
@@ -101,7 +132,7 @@ _Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/cit
 
 ---
 
-## Developing Automated Medical Report Generation for Fundus Fluorescein Angiography Images (A Novel Approach in Ophthalmology Research)
+### Developing Automated Medical Report Generation for Fundus Fluorescein Angiography Images (A Novel Approach in Ophthalmology Research)
 
 **Remote Research Assistant at [University of New South Wales](https://www.unsw.edu.au/) (Summer internship)**
 
@@ -118,7 +149,7 @@ _Under the Supervision of Dr. [Imran Razzak](https://scholar.google.com/citation
 
 ---
 
-## Developing Models & Pipelines For Text Localization In English & Persian
+### Developing Models & Pipelines For Text Localization In English & Persian
 
 This research involves the development of a multimodal model that uses Contrastive Learning and other paradigms to encode texts and audio into a shared embedding space, enhancing the efficiency of text localization in audio streams across various applications. It finds relevant parts of the long speech related to the query.
 
