@@ -14,6 +14,12 @@ Supervisor: [**Professor Purang Abolmaesumi**](https://ece.ubc.ca/purang-abolmae
 *Sep. 2025 – Aug. 2027 (expected)*
 - GPA: 96% (Average: A+)
 
+- Highlighted Courses:
+
+  - Interpretability and Explainability: 99% (A+)
+  - Adaptation & Adaptive Computation: 95% (A+)
+  - Machine Teaching: 94% (A+)
+
 ## [**Sharif University of Technology**](https://en.sharif.edu/), Tehran, Iran
 
 B.Sc., **Computer Engineering**
