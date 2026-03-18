@@ -6,12 +6,6 @@ permalink: /teaching-assistant/
 author_profile: true
 
 ---
----
-layout: archive
-title: ""
-permalink: /teaching-assistant/
-author_profile: true
----
 
 ## Teaching Assistant Experience at the University of British Columbia
 
