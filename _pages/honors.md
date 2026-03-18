@@ -45,7 +45,9 @@ _Research Assistant_
 
 - Designing contrastive learning-based methods to enhance semantic gesture understanding and representation from video, with a publication in preparation.
 
-*June 2025 – Sep. 2025* &nbsp; | &nbsp; Supervisor: Prof. Vera Demberg
+*June 2025 – Sep. 2025* 
+
+*Supervisor: Prof. Vera Demberg*
 
 ---
 
@@ -56,7 +58,9 @@ _Remote Research Assistant_
 - Authored surveys on multimodal RAG and generative AI for animated characters, highlighting gaps and future directions.
 - Advancing Arabic vision-language models beyond state-of-the-art and introducing a benchmark for practical VLM evaluation.
 
-*July 2024 – Sep. 2025* &nbsp; | &nbsp; Supervisor: Dr. Ehsaneddin Asgari
+*July 2024 – Sep. 2025* 
+
+*Supervisor: Dr. Ehsaneddin Asgari*
 
 ---
 
