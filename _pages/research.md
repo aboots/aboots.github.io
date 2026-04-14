@@ -8,7 +8,7 @@ author_profile: true
 
 - **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://drive.google.com/file/d/1nDYQGEdBNzbiyfVHs8vfCDiNEBbJBLKP/view?usp=sharing)
 
-- **Mohammad Mahdi Abootorabi\***, Omid Ghahroodi\*, Marzia Nouri, Anas Madkoor, Doratossadat Dastgheib, and Ehsaneddin Asgari. BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models. *Submitted to ACL 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/1jRMHMwKcNEco5wxJYpVh_ecFiJST6wA6/view?usp=sharing)
+- **Mohammad Mahdi Abootorabi\***, Omid Ghahroodi\*, Marzia Nouri, Anas Madkoor, Doratossadat Dastgheib, and Ehsaneddin Asgari. BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models. **Findings of ACL 2026**. &nbsp; [Preprint](https://drive.google.com/file/d/1jRMHMwKcNEco5wxJYpVh_ecFiJST6wA6/view?usp=sharing)
 
 - **Mohammad Mahdi Abootorabi**, Sina Namazi, Armin Saadat Boroujeni, Lyuyang Wang, Obed Dzikunu, Paul F. R. Wilson, Zhuoxin Guo, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/13ILcEZKeqXjs9x_8mwkX2n5EThG1RB80/view?usp=sharing)
 
@@ -20,7 +20,7 @@ author_profile: true
 
 - Sina Elahimanesh, Mohammadali Mohammadkhani, Sara Zahedi Movahed, **Mohammad Mahdi Abootorabi**, Shayan Salehi, and Abbas Edalat. Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots. *Submitted to ACM CUI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2603.00774)
 
-- **Mohammad Mahdi Abootorabi**, Amirhosein Zobeiri, Mahdi Dehghani, Mohammadali Mohammadkhani, Bardia Mohammadi, Omid Ghahroodi, Mahdieh Soleymani Baghshah, and Ehsaneddin Asgari. Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation. *Findings of ACL 2025*, July 2025. 86 Citations · 485 GitHub Stars. &nbsp; [ACL Anthology](https://aclanthology.org/2025.findings-acl.861/) &nbsp; [GitHub](https://github.com/llm-lab-org/Multimodal-RAG-Survey) &nbsp; [Website](https://multimodalrag.github.io/)
+- **Mohammad Mahdi Abootorabi**, Amirhosein Zobeiri, Mahdi Dehghani, Mohammadali Mohammadkhani, Bardia Mohammadi, Omid Ghahroodi, Mahdieh Soleymani Baghshah, and Ehsaneddin Asgari. Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation. *Findings of ACL 2025*, July 2025. 93 Citations · +500 GitHub Stars. &nbsp; [ACL Anthology](https://aclanthology.org/2025.findings-acl.861/) &nbsp; [GitHub](https://github.com/llm-lab-org/Multimodal-RAG-Survey) &nbsp; [Website](https://multimodalrag.github.io/)
 
 - **Mohammad Mahdi Abootorabi** and Ehsaneddin Asgari. CLASP: Contrastive Language-Speech Pretraining for Multilingual Multimodal Information Retrieval. *ECIR 2025*, April 2025. &nbsp; [arXiv](https://arxiv.org/abs/2412.13071) &nbsp; [ACM Digital Library](https://dl.acm.org/doi/10.1007/978-3-031-88717-8_2) &nbsp; [Website](https://clasp1.github.io/) &nbsp; [Models](https://huggingface.co/llm-lab/CLASP) &nbsp; [Dataset](https://huggingface.co/datasets/llm-lab/SpeechBrown) &nbsp; [Code](https://github.com/language-modeling-lab/CLASP)
 
