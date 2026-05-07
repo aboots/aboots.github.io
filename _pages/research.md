@@ -6,7 +6,7 @@ author_profile: true
 ---
 ## Publications
 
-- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Submitted to NEURIPS 2026*.
+- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Submitted to NEURIPS 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/1sgUXVK7OzjdY5Jhv8fNFESeqR7Yy8qMi/view?usp=sharing)
 
 - **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://drive.google.com/file/d/1nDYQGEdBNzbiyfVHs8vfCDiNEBbJBLKP/view?usp=sharing)
 
