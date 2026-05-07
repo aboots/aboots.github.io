@@ -6,11 +6,13 @@ author_profile: true
 ---
 ## Publications
 
+- Varsha Suresh, **Mohammad Mahdi Abootorabi**, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Submitted to NEURIPS 2026*.
+
 - **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://drive.google.com/file/d/1nDYQGEdBNzbiyfVHs8vfCDiNEBbJBLKP/view?usp=sharing)
 
 - **Mohammad Mahdi Abootorabi\***, Omid Ghahroodi\*, Marzia Nouri, Anas Madkoor, Doratossadat Dastgheib, and Ehsaneddin Asgari. BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models. *Findings of ACL 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/1jRMHMwKcNEco5wxJYpVh_ecFiJST6wA6/view?usp=sharing)
 
-- **Mohammad Mahdi Abootorabi**, Sina Namazi, Armin Saadat Boroujeni, Lyuyang Wang, Obed Dzikunu, Paul F. R. Wilson, Zhuoxin Guo, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/13ILcEZKeqXjs9x_8mwkX2n5EThG1RB80/view?usp=sharing)
+- **Mohammad Mahdi Abootorabi**, Sina Namazi, Armin Saadat Boroujeni, Lyuyang Wang, Obed Dzikunu, Paul F. R. Wilson, Zhuoxin Guo, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection. *Accepted at MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/13ILcEZKeqXjs9x_8mwkX2n5EThG1RB80/view?usp=sharing)
 
 - Lyuyang Wang, **Mohammad Mahdi Abootorabi**, Armin Saadat, Victoria Wu, Nima Hashemi, Samira Sojoudi, Xiangteng He, Leonid Sigal, Christina Luong, Teresa Tsang, and Purang Abolmaesumi. EchoAFR: Echocardiography Multi-Video Report Generation through Anatomical and Functional Aware Hierarchical Q-Former. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/11Q20FqN9HqPi1ZALrpEwTCiuSKJ5DPi0/view?usp=sharing)
 
