@@ -20,7 +20,7 @@ author_profile: true
  
 - Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IPCAI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2602.19005)
 
-- Sina Elahimanesh, Mohammadali Mohammadkhani, Sara Zahedi Movahed, **Mohammad Mahdi Abootorabi**, Shayan Salehi, and Abbas Edalat. Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots. *Submitted to ACM CUI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2603.00774)
+- Sina Elahimanesh, Mohammadali Mohammadkhani\*, Sara Zahedi Movahed\*, **Mohammad Mahdi Abootorabi\***, Shayan Salehi, and Abbas Edalat. Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots. *ACM CUI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2603.00774)
 
 - **Mohammad Mahdi Abootorabi**, Amirhosein Zobeiri, Mahdi Dehghani, Mohammadali Mohammadkhani, Bardia Mohammadi, Omid Ghahroodi, Mahdieh Soleymani Baghshah, and Ehsaneddin Asgari. Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation. *Findings of ACL 2025*, July 2025. 93 Citations · +500 GitHub Stars. &nbsp; [ACL Anthology](https://aclanthology.org/2025.findings-acl.861/) &nbsp; [GitHub](https://github.com/llm-lab-org/Multimodal-RAG-Survey) &nbsp; [Website](https://multimodalrag.github.io/)
 
