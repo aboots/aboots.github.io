@@ -6,8 +6,7 @@ author_profile: true
 ---
 ## Publications
 
-- **Mohammad Mahdi Abootorabi**, Armin Saghafian, Ali Bazshoushtari, Hamid Rezaei, EunJeong Hwang, Vered Shwartz, Parvin Mousavi, Purang Abolmaesumi.  
-  Steering Geometry: Validating Human Value Geometry in LLM Steering Space.  *Under Review at EMNLP 2026*. &nbsp;
+- **Mohammad Mahdi Abootorabi**, Armin Saghafian, Ali Bazshoushtari, Hamid Rezaei, EunJeong Hwang, Vered Shwartz, Parvin Mousavi, Purang Abolmaesumi. Steering Geometry: Validating Human Value Geometry in LLM Steering Space.  *Under Review at EMNLP 2026*. &nbsp;
 
 - Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Under Review at NEURIPS2026*. &nbsp;
  
