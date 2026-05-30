@@ -6,7 +6,11 @@ author_profile: true
 ---
 ## Publications
 
-- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Under Review*. &nbsp;
+- **Mohammad Mahdi Abootorabi**, Armin Saghafian, Ali Bazshoushtari, Hamid Rezaei, EunJeong Hwang, Vered Shwartz, Parvin Mousavi, Purang Abolmaesumi.  
+  Steering Geometry: Validating Human Value Geometry in LLM Steering Space.  *Under Review at EMNLP 2026*. &nbsp;
+
+- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Under Review at NEURIPS2026*. &nbsp;
+ 
 - **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://drive.google.com/file/d/1nDYQGEdBNzbiyfVHs8vfCDiNEBbJBLKP/view?usp=sharing)
 
 - Obed Korshie Dzikunu, **Mohammad Mahdi Abootorabi**, Mohamed Harmanani, Paul F R Wilson, Emma Willis, Ferdinand Luger, Adam Kinnaird, Brian Wodlinger, Parvin Mousavi, Purang Abolmaesumi. Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound. *Submitted to MLHC 2026*.   [Paper](https://drive.google.com/file/d/126Yy_7Nr8qN1wS8TcvJjLr7T_prfnEru/view?usp=sharing)
