@@ -27,7 +27,7 @@ My fields of interest are:
 </p>
 
 <ul style="margin-top: -1%;" markdown='1'>
-<li>Interpretability \& Explainability</li>
+<li>Interpretability & Explainability</li>
 <li> Multimodal Learning</li>
 <li> Natural Language Processing (NLP)</li>
 <li> Representation Learning </li>
