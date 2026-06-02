@@ -6,9 +6,9 @@ author_profile: true
 ---
 ## Publications
 
-- **Mohammad Mahdi Abootorabi**, Armin Saghafian, Ali Bazshoushtari, Hamid Rezaei, EunJeong Hwang, Vered Shwartz, Parvin Mousavi, Purang Abolmaesumi. Steering Geometry: Validating Human Value Geometry in LLM Steering Space.  *Under Review at EMNLP 2026*. &nbsp;
+- **Mohammad Mahdi Abootorabi**, Armin Saghafian, Ali Bazshoushtari, Hamid Rezaei, EunJeong Hwang, Vered Shwartz, Parvin Mousavi, Purang Abolmaesumi. Steering Geometry: Validating Human Value Geometry in LLM Steering Space.  *Under Review at EMNLP*. &nbsp;
 
-- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Under Review at NEURIPS2026*. &nbsp;
+- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Under Review at NEURIPS*. &nbsp;
  
 - **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://drive.google.com/file/d/1nDYQGEdBNzbiyfVHs8vfCDiNEBbJBLKP/view?usp=sharing)
 
@@ -22,7 +22,7 @@ author_profile: true
 
 - Obed Dzikunu, Emma Willis, Mohamed Harmanani, Tarek Elghareb, **Mohammad Mahdi Abootorabi**, Paul F. R. Wilson, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. AlignUS: Unpaired Multimodal Knowledge Distillation for Prostate Cancer Detection in Micro Ultrasound. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/1azRiqov8IeeLSjITr_BVSSlSwcKWNzGl/view?usp=sharing)
  
-- Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IPCAI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2602.19005)
+- Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IJCARS & IPCAI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2602.19005)
 
 - Sina Elahimanesh, Mohammadali Mohammadkhani\*, Sara Zahedi Movahed\*, **Mohammad Mahdi Abootorabi\***, Shayan Salehi, and Abbas Edalat. Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots. *ACM CUI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2603.00774)
 
