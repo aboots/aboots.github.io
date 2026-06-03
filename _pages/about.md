@@ -20,9 +20,6 @@ ul.twocol { width: 110%; }
 I completed my Bachelor’s degree in Computer Engineering at the <a href="https://en.sharif.edu/">Sharif University of Technology</a>, one of the premier universities in Iran and the Middle East.
 <br>
 <br>
-
-<br>
-<br>
 My fields of interest are: 
 </p>
 
@@ -32,4 +29,12 @@ My fields of interest are:
 <li> Natural Language Processing (NLP)</li>
 <li> Representation Learning </li>
 <li> AI for Healthcare </li>
+</ul>
+
+<h3 class="header-color">News</h3>
+<ul markdown='1'>
+<li><b>Prost-RL</b> has been early accepted (top 9%) at MICCAI 2026.</li>
+<li>I traveled to Rio de Janeiro, Brazil to attend ICLR 2026.</li>
+<li><b>BloomBench</b> has been accepted to ACL 2026 Findings.</li>
+<li><b>ProtoTTA</b> has been accepted to the ICLR 2026 TTU Workshop.</li>
 </ul>
