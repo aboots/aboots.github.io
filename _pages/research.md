@@ -10,7 +10,7 @@ author_profile: true
 
 - Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *Under Review at NEURIPS*. &nbsp;
  
-- **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://drive.google.com/file/d/1nDYQGEdBNzbiyfVHs8vfCDiNEBbJBLKP/view?usp=sharing)
+- **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://arxiv.org/abs/2604.15494)
 
 - Obed Korshie Dzikunu, **Mohammad Mahdi Abootorabi**, Mohamed Harmanani, Paul F R Wilson, Emma Willis, Ferdinand Luger, Adam Kinnaird, Brian Wodlinger, Parvin Mousavi, Purang Abolmaesumi. Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound. *Submitted to MLHC 2026*.
 
