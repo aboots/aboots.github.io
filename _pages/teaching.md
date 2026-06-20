@@ -9,15 +9,19 @@ author_profile: true
 
 ## Teaching Assistant Experience at the University of British Columbia
 
+- **CPSC 455 – Applied Industry Practices (Summer 2026)**
+  - Grading exercises, presentations, and all other course deliverables
+  - Organizing labs and group meetings to support students from early idea generation for industry‑related projects through design guidance and continuous mentoring at each stage till the final product
+ 
+
 - **CPSC 319 – Software Engineering Project (Winter 2025)**
   - Working with Benevity to guide three student groups in delivering real-world agentic AI products, with weekly standups and milestone planning sessions
   - Serving as a bridge between the company and students to ensure clear communication and successful project delivery
-  - Grading presentations and documentation throughout the term
+  - Grading presentations and documentation throughout the semester
 
-- **APSC 160 – Introduction to Computation in Engineering Design (Winter 2025)**
-  - Running weekly lab sessions to provide students with additional materials and hands-on practice in C programming
-  - Administering and invigilating lab exams, and grading midterm assessments
-
+- **APSC 160 – Introduction to Computation in Engineering Design (Summer 2026, Winter 2025)**
+  - Running weekly lab sessions to provide students with additional materials and hands-on practice in C and Python programming
+  - Administering and invigilating lab exams, and grading midterm and final assessments and oral‑checking exercises
 ---
 
 ## Teaching Assistant Experience at Sharif University of Technology
