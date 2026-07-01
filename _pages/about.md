@@ -34,7 +34,7 @@ My fields of interest are:
 <h3 class="header-color">Recent News</h3>
 <ul markdown='1'>
 <li>2026-06 – Our paper (<a href="https://arxiv.org/abs/2605.30608">Semantic Motion Anchors</a>) was released on arXiv!</li>
-<li>2026-05 – Our paper (<b>Prost-RL</b>) has been early accepted (top 9%) at MICCAI 2026. (Stay tuned for the arXiv version).</li>
+<li>2026-05 – Our paper (<a href="https://arxiv.org/abs/2606.30951">Prost-RL</a>) has been early accepted (top 9%) at MICCAI 2026.</li>
 <li>2026-04 – I traveled to Rio de Janeiro, Brazil to attend ICLR 2026.</li>
 <li>2026-04 – Our paper (<a href="https://arxiv.org/abs/2606.05531">BloomBench</a>) has been accepted to ACL 2026 Findings. (Stay tuned for the arXiv version).</li>
 <li>2026-03 – Our paper (<a href="https://iclr.cc/virtual/2026/10020241">ProtoTTA</a>) has been accepted to the ICLR 2026 TTU Workshop.</li>
