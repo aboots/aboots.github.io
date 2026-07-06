@@ -12,10 +12,10 @@ author_profile: true
  
 - **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://arxiv.org/abs/2604.15494)
 
-- Obed Korshie Dzikunu, **Mohammad Mahdi Abootorabi**, Mohamed Harmanani, Paul F R Wilson, Emma Willis, Ferdinand Luger, Adam Kinnaird, Brian Wodlinger, Parvin Mousavi, Purang Abolmaesumi. Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound. *Submitted to MLHC 2026*.
+- Obed Korshie Dzikunu, **Mohammad Mahdi Abootorabi**, Mohamed Harmanani, Paul F R Wilson, Emma Willis, Ferdinand Luger, Adam Kinnaird, Brian Wodlinger, Parvin Mousavi, Purang Abolmaesumi. Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound. *Accepted at MLHC 2026*.
 
-- **Mohammad Mahdi Abootorabi\***, Omid Ghahroodi\*, Anas Madkoor, Marzia Nouri, Doratossadat Dastgheib, and Ehsaneddin Asgari. Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models. *Findings of ACL 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/1jRMHMwKcNEco5wxJYpVh_ecFiJST6wA6/view?usp=sharing)
-
+- **Mohammad Mahdi Abootorabi\***, Omid Ghahroodi\*, Anas Madkoor, Marzia Nouri, Doratossadat Dastgheib, and Ehsaneddin Asgari. Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models. *Findings of ACL 2026*. &nbsp; [ACL Anthology](https://aclanthology.org/2026.findings-acl.1416/) [GitHub](https://github.com/qcri/Almieyar-Oryx-BloomBench) [Dataset](https://huggingface.co/datasets/QCRI/BloomBench)
+ 
 - **Mohammad Mahdi Abootorabi**, Sina Namazi, Armin Saadat Boroujeni, Lyuyang Wang, Obed Dzikunu, Paul F. R. Wilson, Zhuoxin Guo, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection. *Early Accepted at MICCAI 2026 (top 9%)*. &nbsp; [Preprint](https://arxiv.org/abs/2606.30951)
 
 - Lyuyang Wang, **Mohammad Mahdi Abootorabi**, Armin Saadat, Victoria Wu, Nima Hashemi, Samira Sojoudi, Xiangteng He, Leonid Sigal, Christina Luong, Teresa Tsang, and Purang Abolmaesumi. EchoAFR: Echocardiography Multi-Video Report Generation through Anatomical and Functional Aware Hierarchical Q-Former. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/11Q20FqN9HqPi1ZALrpEwTCiuSKJ5DPi0/view?usp=sharing)
