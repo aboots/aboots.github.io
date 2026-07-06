@@ -20,7 +20,6 @@ author_profile: true
 
 - Lyuyang Wang, **Mohammad Mahdi Abootorabi**, Armin Saadat, Victoria Wu, Nima Hashemi, Samira Sojoudi, Xiangteng He, Leonid Sigal, Christina Luong, Teresa Tsang, and Purang Abolmaesumi. EchoAFR: Echocardiography Multi-Video Report Generation through Anatomical and Functional Aware Hierarchical Q-Former. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/11Q20FqN9HqPi1ZALrpEwTCiuSKJ5DPi0/view?usp=sharing)
 
-- Obed Dzikunu, Emma Willis, Mohamed Harmanani, Tarek Elghareb, **Mohammad Mahdi Abootorabi**, Paul F. R. Wilson, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. AlignUS: Unpaired Multimodal Knowledge Distillation for Prostate Cancer Detection in Micro Ultrasound. *Submitted to MICCAI 2026*. &nbsp; [Preprint](https://drive.google.com/file/d/1azRiqov8IeeLSjITr_BVSSlSwcKWNzGl/view?usp=sharing)
  
 - Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IJCARS & IPCAI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2602.19005)
 
