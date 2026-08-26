@@ -33,7 +33,8 @@ My fields of interest are:
 
 <h3 class="header-color">Recent News</h3>
 <ul markdown='1'>
-<li>2026-07 – <i>Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound</i> has been accepted to MLHC 2026</li>
+<li>2026-08 – Our paper (<a href="coming soon">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a>) has been accepted to the EMNLP 2026 Main Conference (top 15.4%).</li>
+<li>2026-07 – <a href="https://arxiv.org/abs/2608.20557">Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound</a> has been accepted to MLHC 2026</li>
 <li>2026-06 – Our paper (<a href="https://arxiv.org/abs/2605.30608">Semantic Motion Anchors</a>) was released on arXiv!</li>
 <li>2026-05 – Our paper (<a href="https://arxiv.org/abs/2606.30951">Prost-RL</a>) has been early accepted (top 9%) at MICCAI 2026.</li>
 <li>2026-04 – I traveled to Rio de Janeiro, Brazil to attend ICLR 2026.</li>
