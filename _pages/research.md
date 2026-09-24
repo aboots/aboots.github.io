@@ -8,7 +8,7 @@ author_profile: true
 
 - **Mohammad Mahdi Abootorabi**, Armin Saghafian, Ali Bazshoushtari, Hamid Rezaei, EunJeong Hwang, Vered Shwartz, Parvin Mousavi, Purang Abolmaesumi. Steering Geometry: Validating Human Value Geometry in LLM Steering Space.  *EMNLP 2026 Main Conference (top 15.4%)*. &nbsp; [Preprint](https://arxiv.org/abs/2609.06289) [GitHub](https://github.com/DeepRCL/Steering_Geometry) [Dataset](https://huggingface.co/datasets/DeepRCL/SteeringGeometry)
 
-- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *NeurIPS 2026*. &nbsp;
+- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *NeurIPS 2026 Main Track*. &nbsp; [Preprint](https://arxiv.org/abs/2605.30608)
  
 - **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://arxiv.org/abs/2604.15494)
 
