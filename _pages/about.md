@@ -33,6 +33,7 @@ My fields of interest are:
 
 <h3 class="header-color">Recent News</h3>
 <ul markdown='1'>
+<li>2026-09 – I traveled to Strasbourg, France to attend MICCAI 2026.</li>
 <li>2026-09 – Our paper (<a href="https://arxiv.org/abs/2605.30608">Semantic Motion Anchors</a>) has been accepted to NeurIPS 2026 Main Track!</li>
 <li>2026-09 – I started working at <a href="https://rbcborealis.com/">RBC Borealis</a> as an ML Research Intern.</li> 
 <li>2026-08 – Our paper (<a href="https://arxiv.org/abs/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a>) has been accepted to the EMNLP 2026 Main Conference (top 15.4%).</li>
