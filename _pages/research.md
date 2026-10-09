@@ -16,7 +16,7 @@ author_profile: true
 
 - **Mohammad Mahdi Abootorabi\***, Omid Ghahroodi\*, Anas Madkoor, Marzia Nouri, Doratossadat Dastgheib, and Ehsaneddin Asgari. Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models. *Findings of ACL 2026*. &nbsp; [ACL Anthology](https://aclanthology.org/2026.findings-acl.1416/) [GitHub](https://github.com/qcri/Almieyar-Oryx-BloomBench) [Dataset](https://huggingface.co/datasets/QCRI/BloomBench)
  
-- **Mohammad Mahdi Abootorabi**, Sina Namazi, Armin Saadat Boroujeni, Lyuyang Wang, Obed Dzikunu, Paul F. R. Wilson, Zhuoxin Guo, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection. *Early Accepted at MICCAI 2026 (top 9%)*. &nbsp; [Preprint](https://arxiv.org/abs/2606.30951)
+- **Mohammad Mahdi Abootorabi**, Sina Namazi, Armin Saadat Boroujeni, Lyuyang Wang, Obed Dzikunu, Paul F. R. Wilson, Zhuoxin Guo, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection. *Early Accepted at MICCAI 2026 (top 9%)*. &nbsp; [MICCAI Open Access](https://papers.miccai.org/miccai-2026/0577-Paper6168.html)
 
 - Lyuyang Wang, **Mohammad Mahdi Abootorabi**, Armin Saadat, Victoria Wu, Nima Hashemi, Samira Sojoudi, Xiangteng He, Leonid Sigal, Christina Luong, Teresa Tsang, and Purang Abolmaesumi. Echocardiography Multi-video Report Generation Through Anatomical and Functional Aware Hierarchical Q-former. *MICCAI 2026 Workshop ASMUS*. &nbsp; [Preprint](https://drive.google.com/file/d/11Q20FqN9HqPi1ZALrpEwTCiuSKJ5DPi0/view?usp=sharing)
 
