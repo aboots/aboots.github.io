@@ -12,16 +12,16 @@ author_profile: true
  
 - **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://arxiv.org/abs/2604.15494)
 
-- Obed Korshie Dzikunu, **Mohammad Mahdi Abootorabi**, Mohamed Harmanani, Paul F R Wilson, Emma Willis, Ferdinand Luger, Adam Kinnaird, Brian Wodlinger, Parvin Mousavi, Purang Abolmaesumi. Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound. *MLHC 2026*.
+- Obed Korshie Dzikunu, **Mohammad Mahdi Abootorabi**, Mohamed Harmanani, Paul F R Wilson, Emma Willis, Ferdinand Luger, Adam Kinnaird, Brian Wodlinger, Parvin Mousavi, Purang Abolmaesumi. Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound. *MLHC 2026*. &nbsp; [PMLR Open Access](https://proceedings.mlr.press/v340/dzikunu26a.html)
 
 - **Mohammad Mahdi Abootorabi\***, Omid Ghahroodi\*, Anas Madkoor, Marzia Nouri, Doratossadat Dastgheib, and Ehsaneddin Asgari. Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models. *Findings of ACL 2026*. &nbsp; [ACL Anthology](https://aclanthology.org/2026.findings-acl.1416/) [GitHub](https://github.com/qcri/Almieyar-Oryx-BloomBench) [Dataset](https://huggingface.co/datasets/QCRI/BloomBench)
  
 - **Mohammad Mahdi Abootorabi**, Sina Namazi, Armin Saadat Boroujeni, Lyuyang Wang, Obed Dzikunu, Paul F. R. Wilson, Zhuoxin Guo, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection. *Early Accepted at MICCAI 2026 (top 9%)*. &nbsp; [MICCAI Open Access](https://papers.miccai.org/miccai-2026/0577-Paper6168.html)
 
-- Lyuyang Wang, **Mohammad Mahdi Abootorabi**, Armin Saadat, Victoria Wu, Nima Hashemi, Samira Sojoudi, Xiangteng He, Leonid Sigal, Christina Luong, Teresa Tsang, and Purang Abolmaesumi. Echocardiography Multi-video Report Generation Through Anatomical and Functional Aware Hierarchical Q-former. *MICCAI 2026 Workshop ASMUS*. &nbsp; [Preprint](https://drive.google.com/file/d/11Q20FqN9HqPi1ZALrpEwTCiuSKJ5DPi0/view?usp=sharing)
+- Lyuyang Wang, **Mohammad Mahdi Abootorabi**, Armin Saadat, Victoria Wu, Nima Hashemi, Samira Sojoudi, Xiangteng He, Leonid Sigal, Christina Luong, Teresa Tsang, and Purang Abolmaesumi. Echocardiography Multi-video Report Generation Through Anatomical and Functional Aware Hierarchical Q-former. *MICCAI 2026 Workshop ASMUS*. &nbsp; [MICCAI Open Access](https://papers.miccai.org/miccai-2026-sat/paper/ASMUS_003.pdf)
 
  
-- Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IJCARS & IPCAI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2602.19005)
+- Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IJCARS & IPCAI 2026*. &nbsp; [arXiv](https://arxiv.org/abs/2602.19005)
 
 - Sina Elahimanesh, Mohammadali Mohammadkhani\*, Sara Zahedi Movahed\*, **Mohammad Mahdi Abootorabi\***, Shayan Salehi, and Abbas Edalat. Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots. *ACM CUI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2603.00774)
 
