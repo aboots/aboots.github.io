@@ -19,6 +19,7 @@ Supervisors: [**Professor Purang Abolmaesumi**](https://ece.ubc.ca/purang-abolma
   - Interpretability and Explainability: 99% (A+)
   - Adaptation & Adaptive Computation: 95% (A+)
   - Machine Teaching: 94% (A+)
+  - NLP Commonsense (CPSC 532V): 99% (A+)
 
 ## [**Sharif University of Technology**](https://en.sharif.edu/), Tehran, Iran
 

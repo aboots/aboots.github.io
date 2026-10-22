@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Diagram of a Slurm queue sending one notification when a job batch finishes">
+  <rect width="800" height="500" fill="#f3f6fa"/>
+  <text x="48" y="64" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#0f2b46">JobNotify</text>
+  <text x="48" y="96" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#5c6b7a">One alert when the Slurm batch is done.</text>
+  <rect x="48" y="140" width="300" height="230" rx="16" fill="#ffffff" stroke="#0f2b46" stroke-width="2.5"/>
+  <text x="72" y="178" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f2b46">Slurm queue</text>
+  <g font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#0f2b46">
+    <circle cx="84" cy="220" r="7" fill="#1f6f8b"/>
+    <text x="104" y="225">job running</text>
+    <circle cx="84" cy="262" r="7" fill="#c47b2b"/>
+    <text x="104" y="267">job pending</text>
+    <circle cx="84" cy="304" r="7" fill="#2f6b4f"/>
+    <text x="104" y="309">job finished</text>
+  </g>
+  <text x="72" y="348" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#5c6b7a">Noticed automatically. No job ids.</text>
+  <line x1="364" y1="255" x2="498" y2="255" stroke="#1f6f8b" stroke-width="3"/>
+  <polygon points="498,247 518,255 498,263" fill="#1f6f8b"/>
+  <rect x="532" y="168" width="220" height="174" rx="16" fill="#0f2b46"/>
+  <g fill="#ffffff" transform="translate(642 214)">
+    <rect x="-2.5" y="-22" width="5" height="8" rx="2"/>
+    <path d="M-18 -12h36v16l8 12h-52l8-12z"/>
+    <circle cy="22" r="5"/>
+  </g>
+  <text x="642" y="300" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Batch finished</text>
+  <text x="642" y="324" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#d5e4ee">one ntfy message</text>
+</svg>
