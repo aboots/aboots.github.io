@@ -16,7 +16,7 @@ ul.twocol { width: 110%; }
 </style>
 
 <p style="text-align: justify;">
-<b>Hello!</b> My name is Mohammad Mahdi Abootorabi. I am a first-year Master’s student in Electrical and Computer Engineering at the <a href="https://ece.ubc.ca/">University of British Columbia</a> and <a href="https://vectorinstitute.ai/">Vector Institute</a>, where I am supervised by <a href="https://ece.ubc.ca/purang-abolmaesumi/">Professor Purang Abolmaesumi</a> and <a href="https://vectorinstitute.ai/team/parvin-mousavi/">Professor Parvin Mousavi</a> . 
+<b>Hello!</b> My name is Mohammad Mahdi Abootorabi. I am a second-year Master’s student in Electrical and Computer Engineering at the <a href="https://ece.ubc.ca/">University of British Columbia</a> and <a href="https://vectorinstitute.ai/">Vector Institute</a>, where I am supervised by <a href="https://ece.ubc.ca/purang-abolmaesumi/">Professor Purang Abolmaesumi</a> and <a href="https://vectorinstitute.ai/team/parvin-mousavi/">Professor Parvin Mousavi</a> . 
 I completed my Bachelor’s degree in Computer Engineering at the <a href="https://en.sharif.edu/">Sharif University of Technology</a>, one of the premier universities in Iran and the Middle East.
 <br>
 <br>
@@ -39,7 +39,7 @@ My fields of interest are:
 <li>2026-08 – Our paper (<a href="https://arxiv.org/abs/2609.06289">Steering Geometry: Validating Human Value Geometry in LLM Steering Space</a>) has been accepted to the EMNLP 2026 Main Conference (top 15.4%).</li>
 <li>2026-07 – <a href="https://arxiv.org/abs/2608.20557">Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound</a> has been accepted to MLHC 2026</li>
 <li>2026-06 – Our paper (<a href="https://arxiv.org/abs/2605.30608">Semantic Motion Anchors</a>) was released on arXiv!</li>
-<li>2026-05 – Our paper (<a href="https://arxiv.org/abs/2606.30951">Prost-RL</a>) has been early accepted (top 9%) at MICCAI 2026.</li>
+<li>2026-05 – Our paper (<a href="https://papers.miccai.org/miccai-2026/0577-Paper6168.html">Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection</a>) has been early accepted (top 9%) at MICCAI 2026.</li>
 <li>2026-04 – I traveled to Rio de Janeiro, Brazil to attend ICLR 2026.</li>
 <li>2026-04 – Our paper (<a href="https://arxiv.org/abs/2606.05531">BloomBench</a>) has been accepted to ACL 2026 Findings.</li>
 <li>2026-03 – Our paper (<a href="https://iclr.cc/virtual/2026/10020241">ProtoTTA</a>) has been accepted to the ICLR 2026 TTU Workshop.</li>

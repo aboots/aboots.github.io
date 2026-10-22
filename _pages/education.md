@@ -9,10 +9,10 @@ author_profile: true
 
 MASc, **Electrical and Computer Engineering**
 
-Supervisor: [**Professor Purang Abolmaesumi**](https://ece.ubc.ca/purang-abolmaesumi/)
+Supervisors: [**Professor Purang Abolmaesumi**](https://ece.ubc.ca/purang-abolmaesumi/) and [**Professor Parvin Mousavi**](https://vectorinstitute.ai/team/parvin-mousavi/)
 
 *Sep. 2025 – Aug. 2027 (expected)*
-- GPA: 96% (Average: A+)
+- GPA: 96.5% (Average: A+)
 
 - Highlighted Courses:
 

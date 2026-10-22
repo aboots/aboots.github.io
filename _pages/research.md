@@ -6,11 +6,11 @@ author_profile: true
 ---
 ## Publications
 
+- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *NeurIPS 2026 Main Track*. &nbsp; [Preprint](https://arxiv.org/abs/2605.30608)
+
 - **Mohammad Mahdi Abootorabi**, Armin Saghafian, Ali Bazshoushtari, Hamid Rezaei, EunJeong Hwang, Vered Shwartz, Parvin Mousavi, Purang Abolmaesumi. Steering Geometry: Validating Human Value Geometry in LLM Steering Space.  *EMNLP 2026 Main Conference (top 15.4%)*. &nbsp; [Preprint](https://arxiv.org/abs/2609.06289) [GitHub](https://github.com/DeepRCL/Steering_Geometry) [Dataset](https://huggingface.co/datasets/DeepRCL/SteeringGeometry)
 
-- Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *NeurIPS 2026 Main Track*. &nbsp; [Preprint](https://arxiv.org/abs/2605.30608)
- 
-- **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026*, April 2026. &nbsp; [Preprint](https://arxiv.org/abs/2604.15494)
+- **Mohammad Mahdi Abootorabi**, Parvin Mousavi, Purang Abolmaesumi, and Evan Shelhamer. ProtoTTA: Prototype-Guided Test-Time Adaptation. *Third Workshop on Test-Time Updates (Main Track) at ICLR 2026, submitted to ICLR 2027*, April 2026. &nbsp; [Preprint](https://arxiv.org/abs/2604.15494) [OpenReview](https://openreview.net/pdf?id=ZpqPlsdQTn) [GitHub](https://github.com/DeepRCL/ProtoTTA)
 
 - Obed Korshie Dzikunu, **Mohammad Mahdi Abootorabi**, Mohamed Harmanani, Paul F R Wilson, Emma Willis, Ferdinand Luger, Adam Kinnaird, Brian Wodlinger, Parvin Mousavi, Purang Abolmaesumi. Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound. *MLHC 2026*. &nbsp; [PMLR Open Access](https://proceedings.mlr.press/v340/dzikunu26a.html)
 
@@ -21,17 +21,17 @@ author_profile: true
 - Lyuyang Wang, **Mohammad Mahdi Abootorabi**, Armin Saadat, Victoria Wu, Nima Hashemi, Samira Sojoudi, Xiangteng He, Leonid Sigal, Christina Luong, Teresa Tsang, and Purang Abolmaesumi. Echocardiography Multi-video Report Generation Through Anatomical and Functional Aware Hierarchical Q-former. *MICCAI 2026 Workshop ASMUS*. &nbsp; [MICCAI Open Access](https://papers.miccai.org/miccai-2026-sat/paper/ASMUS_003.pdf)
 
  
-- Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IJCARS & IPCAI 2026*. &nbsp; [arXiv](https://arxiv.org/abs/2602.19005)
+- Emma Willis\*, Tarek Elghareb\*, Paul F. R. Wilson, Minh Nguyen Nhat To, **Mohammad Mahdi Abootorabi**, Amoon Jamzad, Brian Wodlinger, Parvin Mousavi, and Purang Abolmaesumi. GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound. *IPCAI 2026*. &nbsp; [arXiv](https://arxiv.org/abs/2602.19005)
 
 - Sina Elahimanesh, Mohammadali Mohammadkhani\*, Sara Zahedi Movahed\*, **Mohammad Mahdi Abootorabi\***, Shayan Salehi, and Abbas Edalat. Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots. *ACM CUI 2026*. &nbsp; [Preprint](https://arxiv.org/abs/2603.00774)
 
-- **Mohammad Mahdi Abootorabi**, Amirhosein Zobeiri, Mahdi Dehghani, Mohammadali Mohammadkhani, Bardia Mohammadi, Omid Ghahroodi, Mahdieh Soleymani Baghshah, and Ehsaneddin Asgari. Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation. *Findings of ACL 2025*, July 2025. +100 Citations · +500 GitHub Stars. &nbsp; [ACL Anthology](https://aclanthology.org/2025.findings-acl.861/) &nbsp; [GitHub](https://github.com/llm-lab-org/Multimodal-RAG-Survey) &nbsp; [Website](https://multimodalrag.github.io/)
+- **Mohammad Mahdi Abootorabi**, Amirhosein Zobeiri, Mahdi Dehghani, Mohammadali Mohammadkhani, Bardia Mohammadi, Omid Ghahroodi, Mahdieh Soleymani Baghshah, and Ehsaneddin Asgari. Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation. *Findings of ACL 2025*, July 2025. +175 Citations and +545 GitHub Stars. &nbsp; [ACL Anthology](https://aclanthology.org/2025.findings-acl.861/) &nbsp; [GitHub](https://github.com/llm-lab-org/Multimodal-RAG-Survey) &nbsp; [Website](https://multimodalrag.github.io/)
 
 - **Mohammad Mahdi Abootorabi** and Ehsaneddin Asgari. CLASP: Contrastive Language-Speech Pretraining for Multilingual Multimodal Information Retrieval. *ECIR 2025*, April 2025. &nbsp; [arXiv](https://arxiv.org/abs/2412.13071) &nbsp; [ACM Digital Library](https://dl.acm.org/doi/10.1007/978-3-031-88717-8_2) &nbsp; [Website](https://clasp1.github.io/) &nbsp; [Models](https://huggingface.co/llm-lab/CLASP) &nbsp; [Dataset](https://huggingface.co/datasets/llm-lab/SpeechBrown) &nbsp; [Code](https://github.com/language-modeling-lab/CLASP)
 
 - **Mohammad Mahdi Abootorabi\***, Alireza Ghahramani Kure\*, Mohammadali Mohammadkhani, Sina Elahimanesh, and Mohammad Ali Ali Panah. MultiMind at SemEval-2025 Task 7: Crosslingual Fact-Checked Claim Retrieval via Multi-Source Alignment. *SemEval at ACL 2025*, July 2025. &nbsp; [ACL Anthology](https://aclanthology.org/2025.semeval-1.303/)
 
-- **Mohammad Mahdi Abootorabi**, Omid Ghahroodi, Pardis Sadat Zahraei, Hossein Behzadasl, Alireza Mirrokni, Mobina Salimipanah, Arash Rasouli, Bahar Behzadipour, Sara Azarnoush, Benyamin Maleki, Erfan Sadraiye, Kiarash Kiani Feriz, Mahdi Teymouri Nahad, Ali Moghadasi, Abolfazl Eshagh Abianeh, Nizi Nazar, Hamid R. Rabiee, Mahdieh Soleymani Baghshah, Meisam Ahmadi, and Ehsaneddin Asgari. Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions. May 2025. 13 Citations. &nbsp; [arXiv](https://arxiv.org/abs/2504.19056) &nbsp; [GitHub](https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey) &nbsp; [Website](https://generative-ai-for-character-animation.github.io/)
+- **Mohammad Mahdi Abootorabi**, Omid Ghahroodi, Pardis Sadat Zahraei, Hossein Behzadasl, Alireza Mirrokni, Mobina Salimipanah, Arash Rasouli, Bahar Behzadipour, Sara Azarnoush, Benyamin Maleki, Erfan Sadraiye, Kiarash Kiani Feriz, Mahdi Teymouri Nahad, Ali Moghadasi, Abolfazl Eshagh Abianeh, Nizi Nazar, Hamid R. Rabiee, Mahdieh Soleymani Baghshah, Meisam Ahmadi, and Ehsaneddin Asgari. Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions. May 2025. +45 Citations. &nbsp; [arXiv](https://arxiv.org/abs/2504.19056) &nbsp; [GitHub](https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey) &nbsp; [Website](https://generative-ai-for-character-animation.github.io/)
 
 - **Mohammad Mahdi Abootorabi**, Nona Ghazizadeh, Seyed Arshan Dalili, Alireza Ghahramani Kure, Mahshid Dehghani, and Ehsaneddin Asgari. AIMA at SemEval-2024 Task 10: History-Based Emotion Recognition in Hindi-English Code-Mixed Conversations. *SemEval at NAACL 2024*, June 2024. &nbsp; [ACL Anthology](https://aclanthology.org/2024.semeval-1.244/)
 
@@ -88,7 +88,7 @@ _Under the Supervision of Dr. [Ehsaneddin Asgari](https://scholar.google.com/cit
 
 **M. M. Abootorabi, O. Ghahroodi, P. S. Zahraei, H. Behzadasl, A. Mirrokni, M. Salimipanah, A. Rasouli, B. Behzadipour, S. Azarnoush, B. Maleki, E. Sadraiye, K. K. Feriz, M. T. Nahad, A. Moghadasi, A. E. Abianeh, N. Nazar, H. R. Rabiee, M. S. Baghshah, M. Ahmadi, and E. Asgari. Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions, May 2025**
 
-[arXiv](https://arxiv.org/abs/2504.19056) &nbsp;&nbsp;&nbsp; [Github Repository](https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey)
+[arXiv](https://arxiv.org/abs/2504.19056) &nbsp;&nbsp;&nbsp; [Github Repository](https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey) &nbsp;&nbsp;&nbsp; [Website](https://generative-ai-for-character-animation.github.io/)
     
 As generative AI rapidly transforms animation, art, and gaming, keeping track of the swift advancements across various character components like motion, emotions, and facial expressions has become challenging. This survey offers a unified perspective on this dynamic field.
 

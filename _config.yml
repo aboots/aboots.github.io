@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Mohammad Mahdi Abootorabi"
 title_separator          : "-"
 name                     : &name "Mohammad Mahdi Abootorabi"
-description              : &description "personal description"
+description              : &description "MASc student in Electrical and Computer Engineering at the University of British Columbia, researching multimodal learning, NLP, and AI for healthcare."
 url                      : https://aboots.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aboots/aboots.github.io"
@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Mohammad Mahdi Abootorabi"
   avatar           : "aboots.png"
-  bio              : "MASc in ECE at UBC and Vector Institute <br><br> <a href='https://ece.ubc.ca/'><img src='/images/ubc.png' style='width: 20%; height: 20%;' /></a> <a href='https://vectorinstitute.ai/'><img src='/images/vector.png' style='width: 45%; height: 45%;' /></a>"
+  bio              : "MASc in ECE at UBC and Vector Institute<br>ML Research Intern at <a href='https://www.borealisai.com/'>RBC Borealis AI</a> <br><br> <a href='https://ece.ubc.ca/'><img src='/images/ubc.png' style='width: 20%; height: 20%;' /></a> <a href='https://vectorinstitute.ai/'><img src='/images/vector.png' style='width: 45%; height: 45%;' /></a>"
   location         : "Vancouver, BC"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

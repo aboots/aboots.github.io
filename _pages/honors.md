@@ -25,11 +25,27 @@ author_profile: true
 
 ## Working Experience
 
+### RBC Borealis AI
+
+_ML Research Intern_
+
+- Conducting research on advancing pretraining methods for tabular foundation models.
+
+*Sep. 2026 – Dec. 2026*
+
+*Supervisors: Martin Lohmann and Arash Khoeini*
+
+---
+
 ### The University of British Columbia & Vector Institute
 
 _Research Assistant_
 
 - Developing novel multimodal learning and reinforcement learning methods to improve prostate cancer detection using ultrasound images.
+
+*Sep. 2025 – Present*
+
+*Supervisors: Prof. Purang Abolmaesumi & Prof. Parvin Mousavi*
 
 _Teaching Assistant_
 
@@ -43,7 +59,7 @@ _Teaching Assistant_
 
 _Research Assistant_
 
-- Designing contrastive learning-based methods to enhance semantic gesture understanding and representation from video, with a publication in preparation.
+- Designing contrastive learning-based methods to enhance semantic gesture understanding and representation from video, resulting in a NeurIPS 2026 publication (co-first author).
 
 *June 2025 – Sep. 2025* 
 
@@ -64,6 +80,30 @@ _Remote Research Assistant_
 
 ---
 
+### Imperial College London
+
+_Remote Research Assistant (Voluntary, Unpaid)_
+
+- Design an LLM-based Persian therapist Agent incorporating the Self-Attachment Technique (SAT), achieving superior performance over baseline LLMs.
+
+*Sep. 2024 – Sep. 2025*
+
+*Supervisor: Prof. Abbas Edalat*
+
+---
+
+### University of New South Wales
+
+_Remote Research Assistant (Voluntary, Unpaid, Summer Internship)_
+
+- Design an RL-based model to automate and enhance medical report generation for Fundus Fluorescein Angiography images.
+
+*June 2023 – Sep. 2023*
+
+*Supervisor: Dr. Imran Razzak*
+
+---
+
 ### Yektanet Technology Company
 
 _Software Engineer_
@@ -79,11 +119,23 @@ _Software Engineer_
 
 ---
 
-## Volunteer Activities
+### Sharif University of Technology
 
-### Reviewer — ACM Transactions on Intelligent Systems and Technology & MICCAI 2026
+_Research Assistant (Voluntary, Unpaid)_
 
-Conducted peer reviews for ACM Transactions on Intelligent Systems and Technology and MICCAI 2026, evaluating technical novelty, methodology, and experimental validity of submitted manuscripts.
+- Design a novel multimodal contrastive learning-based semantic speech encoder that outperforms ASR-based retrieval pipelines in speed, accuracy (many scenarios), and efficiency.
+
+*Jan. 2023 – Feb. 2024*
+
+*Supervisor: Dr. Ehsaneddin Asgari*
+
+---
+
+## Academic Service & Volunteer Activities
+
+### Reviewer — ICLR 2027, ACM Transactions on Intelligent Systems and Technology & MICCAI 2026
+
+Conducted peer reviews for ICLR 2027, ACM Transactions on Intelligent Systems and Technology, and MICCAI 2026, evaluating technical novelty, methodology, and experimental validity of submitted manuscripts.
 
 *Fall 2025*
 
