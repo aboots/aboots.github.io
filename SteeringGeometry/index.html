@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Steering Geometry: Validating Human Value Geometry in LLM Steering Space</title>
+<meta name="description" content="EMNLP 2026 (Main). Do LLM steering vectors reflect the structure of human values? A 26K-sample benchmark covering 20 Schwartz values and a study of distribution-driven vs. behavior-centric steering methods.">
+<meta property="og:title" content="Steering Geometry: Validating Human Value Geometry in LLM Steering Space">
+<meta property="og:description" content="Distribution-driven steering methods recover human value topologies (Spearman ρ up to 0.51); behavior-centric methods do not.">
+<meta property="og:image" content="assets/img/fig1_pipeline.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="home" href="https://aboots.github.io">&larr; aboots.github.io</a>
+  <nav><a href="#abstract">Abstract</a><a href="#findings">Findings</a><a href="#benchmark">Benchmark</a><a href="#method">Method</a><a href="#geometry">Geometry</a><a href="#scale">Scale &amp; tuning</a><a href="#transfer">Transfer</a><a href="#mft">MFT</a><a href="#resources">Resources</a><a href="#bibtex">BibTeX</a></nav>
+  <button id="theme" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="venue">EMNLP 2026 · Main Conference</div>
+  <h1>Steering Geometry<span class="sub">Validating Human Value Geometry in LLM Steering Space</span></h1>
+  <div class="authors">
+    <span class="a"><a href="https://aboots.github.io">Mohammad Mahdi Abootorabi</a><sup>1,2</sup></span>
+    <span class="a">Armin Saghafian<sup>1</sup></span>
+    <span class="a">Ali Bazshoushtari<sup>1</sup></span>
+    <span class="a">Hamid Rezaei<sup>1</sup></span>
+    <span class="a">EunJeong Hwang<sup>1,2</sup></span>
+    <span class="a">Vered Shwartz<sup>1,2</sup></span>
+    <span class="a">Parvin Mousavi<sup>3,2</sup></span>
+    <span class="a">Purang Abolmaesumi<sup>1</sup></span>
+  </div>
+  <div class="affs"><span><sup>1</sup> University of British Columbia</span><span><sup>2</sup> Vector Institute for AI</span><span><sup>3</sup> Queen’s University</span></div>
+  <div class="btns">
+    <a class="btn" href="https://aclanthology.org/2026.emnlp-main.2508/"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zM14 3.5V8h4.5zM8 12h8v1.5H8zm0 3.5h8V17H8z"/></svg>Paper (ACL Anthology)</a>
+    <a class="btn alt" href="https://aclanthology.org/2026.emnlp-main.2508.pdf"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zM14 3.5V8h4.5zM8.5 17v-5h1.8c1.1 0 1.8.6 1.8 1.6S11.4 15 10.3 15H9.9v2zm1.4-3.2h.3c.4 0 .6-.2.6-.4s-.2-.5-.6-.5h-.3z"/></svg>PDF</a>
+    <a class="btn alt" href="https://arxiv.org/abs/2609.06289"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zM14 3.5V8h4.5zM8.5 17v-5h1.8c1.1 0 1.8.6 1.8 1.6S11.4 15 10.3 15H9.9v2zm1.4-3.2h.3c.4 0 .6-.2.6-.4s-.2-.5-.6-.5h-.3z"/></svg>arXiv</a>
+    <a class="btn alt" href="https://github.com/DeepRCL/Steering_Geometry"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>Code</a>
+    <a class="btn alt" href="https://huggingface.co/datasets/DeepRCL/SteeringGeometry"><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 3 7 3 11.5c0 3.2 1.6 5.3 3.4 6.6.8 1.7 3 3.4 5.6 3.4s4.8-1.7 5.6-3.4c1.8-1.3 3.4-3.4 3.4-6.6C21 7 17.5 3 12 3zM9 10.5a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zm6 0a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zM8.5 15.5c1 1.4 2.2 2 3.5 2s2.5-.6 3.5-2c-1.1.5-2.2.7-3.5.7s-2.4-.2-3.5-.7z"/></svg>Dataset</a>
+    <a class="btn alt" href="#bibtex"><svg viewBox="0 0 24 24"><path d="M5 3h14v18l-7-4-7 4z"/></svg>BibTeX</a>
+  </div>
+  <div class="tldr"><b>TL;DR</b> — Successful steering doesn’t guarantee meaningful structure. Distribution-driven steering methods (CAA, SAS, SphericalSteer, ODESteer) recover the geometry of Schwartz’s human values, while behavior-centric methods (OPT, COLD-Steer, BiPO) reach comparable target accuracy but show little correlation with the expected value geometry.</div>
+</div></div>
+
+<section id="overview"><div class="wrap">
+  <figure>
+    <img src="assets/img/fig1_pipeline.jpg" alt="Steering Geometry pipeline: contrastive value benchmark, steering vector extraction, geometry validation and cross-value transfer">
+    <figcaption><b>Figure 1.</b> Pipeline for analyzing value geometry in the LLM activation-steering space. (1) For each Schwartz value, we build contrastive (question, positive, negative) pairs. (2) We extract residual-stream activations at a selected layer ℓ⋆ and apply steering methods from two paradigms, distribution-driven and behavior-centric, to construct a value vector bank. (3) We evaluate (A) geometric alignment against the Schwartz circumplex, and (B) behavioral cross-value transfer, measuring the effect on other values when steering toward a single one.</figcaption>
+  </figure>
+</div></section>
+
+<section id="abstract" class="alt"><div class="wrap narrow">
+  <h2>Abstract</h2>
+  <p class="abstract">As large language models (LLMs) are increasingly deployed in alignment-sensitive contexts, activation steering has emerged as a lightweight, inference-time alternative to fine-tuning methods (e.g., RLHF, DPO) for behavioral control. However, existing work typically validates steering on isolated behaviors, leaving it unclear whether steering vectors encode coherent semantic structure or merely exploit behavior-specific shortcuts. We investigate whether the latent geometry of LLM steering vectors reflects theory-specified structure in human values and morality. Using Schwartz’s Theory of Basic Human Values as our primary fine-grained framework, we introduce a 26K-sample benchmark covering 20 human values and analyze distribution-driven methods (e.g., CAA, SphericalSteer, ODESteer) and behavior-centric approaches (e.g., COLD-Steer, BiPO) across diverse model families and sizes. We find that distribution-driven methods recover human value topologies aligned with theoretical predictions (Spearman ρ up to 0.51, <i>p</i> &lt; 10<sup>−13</sup>). In contrast, behavior-centric methods achieve comparable steering performance but show little correlation with the expected value geometry. Geometric fidelity improves with model scale but drops after instruction tuning. Finally, better geometric alignment also leads to more human-consistent transfer across values: steering one value correctly lifts compatible values and suppresses opposing ones. Code and data are available at: <a href="https://github.com/DeepRCL/Steering_Geometry">github.com/DeepRCL/Steering_Geometry</a>.</p>
+</div></section>
+
+<section id="findings"><div class="wrap">
+  <h2>Key Findings</h2>
+  <div class="cards">
+    <div class="card"><div class="num">ρ up to 0.51</div><div class="lbl">Distribution-driven methods recover human value topologies aligned with Schwartz’s theory (<i>p</i> &lt; 10<sup>−13</sup>; SAS on Qwen3.5-9B-Base: ρ<sub>T</sub> = 0.5069).</div></div>
+    <div class="card"><div class="num">≈ 0</div><div class="lbl">Behavior-centric methods (OPT, COLD-Steer, BiPO) show no statistically significant correlation with the expected geometry on Qwen3.5-9B-Base, despite comparable steering results on our dataset.</div></div>
+    <div class="card"><div class="num" style="font-size:26px">Scale ↑ · Tuning ↓</div><div class="lbl">Geometric fidelity improves with model scale and with newer model families, but drops after instruction tuning.</div></div>
+    <div class="card"><div class="num">Transfer</div><div class="lbl">Better geometric alignment predicts more human-consistent cross-value transfer: steering one value lifts compatible values and suppresses opposing ones.</div></div>
+  </div>
+  <h3>Contributions</h3>
+  <ol>
+    <li>The first study (to the authors’ knowledge) of whether the geometry of extracted steering vectors reflects human values, comparing distribution-driven and behavior-centric steering against the Schwartz circumplex. The same paradigm-level separation appears under Moral Foundations Theory’s coarser foundation-family structure.</li>
+    <li>Larger and more recent model families show stronger geometric alignment, whereas instruction-tuned models show weaker value geometry, pointing to a conflict between post-training and richer internal value representations.</li>
+    <li>A benchmark of roughly 26K contrastive quadruples spanning the Schwartz taxonomy.</li>
+    <li>Methods that better reflect human value geometry also behave more consistently across the value space: steering toward one value gains accuracy on compatible values and suppresses opposing ones.</li>
+  </ol>
+</div></section>
+
+<section id="benchmark" class="alt"><div class="wrap">
+  <h2>The Steering Geometry Benchmark</h2>
+  <p class="lead" style="text-align:center;max-width:760px;margin:0 auto 20px">A contrastive benchmark of <code>(question, value, positive answer, negative answer)</code> quadruples for studying human value geometry in LLM steering space.</p>
+  <div class="cards">
+    <div class="card"><div class="num">26,428</div><div class="lbl">examples covering the 20 Schwartz values (<code>schwartz_full</code>)</div></div>
+    <div class="card"><div class="num">4,335</div><div class="lbl">examples in the main Schwartz steering-experiment configuration (<code>schwartz_experiment</code>)</div></div>
+    <div class="card"><div class="num">1,200</div><div class="lbl">Moral Foundations Theory examples, 200 for each of 6 foundations (<code>mft_experiment</code>)</div></div>
+  </div>
+  <p style="margin-top:18px">The Schwartz data is built from ValueBench (911 samples) and Touché23-ValueEval (about 25.5K samples), using the 20-value taxonomy of Kiesel et al. (2022), which extends Schwartz’s refined 19 values with Universalism: Objectivity while preserving the circumplex ordering. Each positive answer aligns with the target value; the negative answer is value-neutral. The MFT set is built from the Moral Foundations Reddit Corpus and covers Care, Equality, Proportionality, Loyalty, Authority, and Purity. Labels indicate target values, not universal moral judgments; the English-language data include generated text and inherit source biases (see the <a href="https://huggingface.co/datasets/DeepRCL/SteeringGeometry">dataset card</a>).</p>
+</div></section>
+
+<section id="method"><div class="wrap">
+  <h2>Method</h2>
+  <p class="lead" style="text-align:center;max-width:760px;margin:0 auto 24px">Do steering vectors encode meaningful human value structure, or only exploit behavior-specific shortcuts? A four-stage pipeline tests this.</p>
+  <div class="steps">
+    <div class="step"><h4>Value-contrastive data</h4><p>Build contrastive question–answer pairs grounded in Schwartz’s theory, with 200 prompt pairs per value for the experiments (90/10 train/test split).</p></div>
+    <div class="step"><h4>Value direction extraction</h4><p>Each method’s output is the effective activation shift it induces at layer ℓ for value b, stored in a per-method value vector bank.</p></div>
+    <div class="step"><h4>Geometry test</h4><p>Mean-center and normalize the 20 vectors, then compare their cosine-similarity matrix E to the theoretical circumplex matrix T.</p></div>
+    <div class="step"><h4>Cross-value transfer</h4><p>Steer toward value b, evaluate on every other value b′, and build a 20 × 20 transfer matrix (380 off-diagonal entries).</p></div>
+  </div>
+  <div class="two" style="margin-top:28px">
+    <div class="card">
+      <span class="pill dd">Distribution-driven</span>
+      <p style="margin-top:10px">Aggregate activation differences over contrastive prompts: <b>CAA</b> (additive mean difference), <b>SAS</b> (sparse-autoencoder feature space), <b>ODESteer</b> (ODE-based dynamics), <b>SphericalSteer</b> (geometry-aware spherical rotation).</p>
+    </div>
+    <div class="card">
+      <span class="pill bc">Behavior-centric</span>
+      <p style="margin-top:10px">Optimize the steering vector against an output objective: <b>OPT</b> (gradient descent on answer log-probabilities), <b>BiPO</b> (DPO-style bi-directional preference optimization), <b>COLD-Steer</b> (finite-difference approximation of a one-step gradient update).</p>
+    </div>
+  </div>
+  <h3>Evaluation metrics</h3>
+  <ul>
+    <li><b>ρ<sub>T</sub> / r<sub>T</sub></b> — Spearman / Pearson correlation between the empirical similarity matrix E and the theoretical circumplex matrix, T<sub>bb′</sub> = cos(min(|b−b′|, 20−|b−b′|) × 18°).</li>
+    <li><b>ρ<sub>H</sub></b> — Spearman correlation between E and the negative hierarchical distance (1 same sub-family, 2 same higher-order group, 5 unrelated, 10 opposing groups).</li>
+    <li><b>Δ<sub>pol</sub></b> — mean similarity of same-family pairs minus that of pairs from opposing higher-order groups.</li>
+    <li><b>TWTM</b> and <b>ρ<sub>H</sub><sup>tr</sup></b> — Continuous and Hierarchical Transfer Fidelity, computed on the two-way-centered transfer matrix.</li>
+    <li><b>Δ<sub>MFT</sub></b> — difference between mean within-family and cross-family cosine similarity for Moral Foundations Theory.</li>
+  </ul>
+  <p>Models: all methods on Qwen3.5-9B (Base and Instruct) and Llama3.1-8B (Base); CAA across seven families (Llama3.1, Mistral, Falcon, Qwen2.5, Qwen3.5, Gemma-3, Gemma-4). Robustness checks use a fresh disjoint sample, fully paraphrased text, and a single-label subset; the paradigm-level separation holds in all three.</p>
+</div></section>
+
+<section id="geometry" class="alt"><div class="wrap">
+  <h2>Value Geometry Across Steering Methods</h2>
+  <figure>
+    <img src="assets/img/fig2_geometry.jpg" alt="Cosine-similarity matrices and 2D projections for theory, raw activations, SAS and OPT">
+    <figcaption><b>Figure 2.</b> Value geometry across steering methods on Qwen3.5-9B-Base. <b>Top:</b> pairwise cosine-similarity matrices for the theoretical Schwartz circumplex, raw residual-stream activations, SAS (a distribution-driven method), and OPT (a behavior-centric method); red/blue indicates positive/negative correlations. <b>Bottom:</b> 2D projections of each similarity matrix aligned to the canonical Schwartz arrangement. SAS reproduces the circumplex structure most clearly, while OPT scatters values with no organization, even worse than the raw-activation baseline.</figcaption>
+  </figure>
+  <h3>Geometry-alignment metrics (Qwen3.5-9B)</h3>
+  <div class="tbl"><table><thead><tr><th>Method</th><th>ρ<sub>T</sub></th><th>r<sub>T</sub></th><th>ρ<sub>H</sub></th><th>Δ<sub>pol</sub></th></tr></thead><tbody><tr class="grp"><td colspan="5">Base (pre-trained) · Qwen3.5-9B</td></tr><tr class=""><td>LLM Raw Activation Space</td><td class="">0.2228 <small>(2.0e-3)</small></td><td class="">0.2087 <small>(3.9e-3)</small></td><td class="">0.2115 <small>(3.4e-3)</small></td><td class="">0.0009</td></tr><tr class="bc"><td>OPT</td><td class="ns">0.1138 <small>(1.2e-1)</small></td><td class="ns">0.1104 <small>(1.3e-1)</small></td><td class="ns">0.0493 <small>(5.0e-1)</small></td><td class="">0.0001</td></tr><tr class="bc"><td>COLD-Steer (FD)</td><td class="ns">0.0265 <small>(7.2e-1)</small></td><td class="ns">−0.0100 <small>(8.9e-1)</small></td><td class="ns">0.0013 <small>(9.9e-1)</small></td><td class="">0.0162</td></tr><tr class="bc"><td>BiPO</td><td class="ns">0.1188 <small>(1.0e-1)</small></td><td class="ns">0.1291 <small>(7.6e-2)</small></td><td class="ns">0.1070 <small>(1.4e-1)</small></td><td class="">0.0151</td></tr><tr class="dd"><td>ODESteer</td><td class="">0.2730 <small>(1.4e-4)</small></td><td class="">0.2963 <small>(3.3e-5)</small></td><td class="">0.2988 <small>(2.8e-5)</small></td><td class="">0.0255</td></tr><tr class="dd"><td>SphericalSteer</td><td class="">0.3962 <small>(1.5e-8)</small></td><td class="">0.4061 <small>(6.1e-9)</small></td><td class="">0.2746 <small>(1.3e-4)</small></td><td class="">0.3620</td></tr><tr class="dd"><td>CAA</td><td class="">0.4606 <small>(2.3e-11)</small></td><td class="">0.4754 <small>(4.2e-12)</small></td><td class="">0.3408 <small>(1.5e-6)</small></td><td class="">0.3883</td></tr><tr class="dd"><td>SAS</td><td class="best">0.5069 <small>(8.5e-14)</small></td><td class="best">0.5061 <small>(9.4e-14)</small></td><td class="best">0.3910 <small>(2.4e-8)</small></td><td class="best">0.3951</td></tr><tr class="grp"><td colspan="5">Instruct (instruction-tuned) · Qwen3.5-9B</td></tr><tr class=""><td>LLM Raw Activation Space</td><td class="ns">0.1253 <small>(8.5e-2)</small></td><td class="ns">0.1112 <small>(1.3e-1)</small></td><td class="">0.1455 <small>(4.5e-2)</small></td><td class="">0.0004</td></tr><tr class="bc"><td>OPT</td><td class="ns">0.0615 <small>(4.0e-1)</small></td><td class="ns">0.0552 <small>(4.5e-1)</small></td><td class="ns">−0.0177 <small>(8.1e-1)</small></td><td class="">−0.0099</td></tr><tr class="bc"><td>COLD-Steer (FD)</td><td class="ns">−0.0568 <small>(4.4e-1)</small></td><td class="ns">−0.0394 <small>(5.9e-1)</small></td><td class="ns">−0.0268 <small>(7.1e-1)</small></td><td class="">0.1401</td></tr><tr class="bc"><td>BiPO</td><td class="ns">−0.0104 <small>(8.9e-1)</small></td><td class="ns">−0.0245 <small>(7.4e-1)</small></td><td class="ns">0.0378 <small>(6.1e-1)</small></td><td class="">−0.0016</td></tr><tr class="dd"><td>ODESteer</td><td class="">0.2055 <small>(3.7e-3)</small></td><td class="">0.2177 <small>(1.9e-3)</small></td><td class="">0.1495 <small>(5.2e-3)</small></td><td class="">0.0176</td></tr><tr class="dd"><td>SphericalSteer</td><td class="">0.2048 <small>(4.6e-3)</small></td><td class="">0.2170 <small>(2.6e-3)</small></td><td class="ns">0.1009 <small>(1.7e-1)</small></td><td class="">0.2397</td></tr><tr class="dd"><td>CAA</td><td class="">0.2351 <small>(1.1e-3)</small></td><td class="">0.2527 <small>(4.4e-4)</small></td><td class="ns">0.1248 <small>(8.6e-2)</small></td><td class="">0.2603</td></tr><tr class="dd"><td>SAS</td><td class="best">0.3256 <small>(4.6e-6)</small></td><td class="best">0.3331 <small>(2.7e-6)</small></td><td class="best">0.2058 <small>(4.4e-3)</small></td><td class="best">0.3933</td></tr></tbody></table></div>
+  <p class="note">Cells show the metric with its <i>p</i>-value in parentheses; greyed entries are not significant (<i>p</i> ≥ 0.05). Bold marks the best value in each block. <span class="pill dd">blue bar</span> distribution-driven, <span class="pill bc">orange bar</span> behavior-centric. Distribution-driven methods sharpen the latent value structure that is only partially visible in raw activations; behavior-centric methods weaken it. The same trend holds on Llama3.1-8B (paper Table 6).</p>
+</div></section>
+
+<section id="scale"><div class="wrap">
+  <h2>Model Scale, Family, and Instruction Tuning</h2>
+  <figure>
+    <img src="assets/img/fig3_scale.jpg" alt="Theory rank correlation, hierarchical structure correlation and polarity separation versus model size for seven model families">
+    <figcaption><b>Figure 3.</b> Effect of model family and size on steering-geometry metrics (all using CAA): Theory Rank Correlation (ρ<sub>T</sub>), Hierarchical Structure Correlation (ρ<sub>H</sub>), and Polarity Separation Score (Δ<sub>pol</sub>).</figcaption>
+  </figure>
+  <div class="two">
+    <div class="card"><h4 style="margin:0 0 6px">Scale and family</h4><p style="margin:0;font-size:15px">Metrics improve monotonically with scale within the Qwen3.5 and Gemma-3 families for distribution-driven methods. At the 7–9B range, ρ<sub>T</sub> rises from Falcon-7B (0.20) to Mistral-7B (0.32), Llama-3.1-8B (0.37) and Qwen3.5-9B (0.46). Geometric fidelity is independent from downstream performance: Gemma-4-31B reaches ρ<sub>T</sub> = 0.38, lower than Qwen3.5-4B (0.41).</p></div>
+    <div class="card"><h4 style="margin:0 0 6px">Instruction tuning</h4><p style="margin:0;font-size:15px">All methods degrade from Base to Instruct (Table above); e.g., SAS falls from ρ<sub>T</sub> 0.5069 to 0.3256 and CAA from 0.4606 to 0.2351. The paper associates multi-stage post-training with a form of value geometry drift.</p></div>
+  </div>
+</div></section>
+
+<section id="transfer" class="alt"><div class="wrap">
+  <h2>Cross-Value Steering Transfer</h2>
+  <p class="lead" style="text-align:center;max-width:780px;margin:0 auto 10px">Under the Schwartz circumplex, steering toward one value should lift compatible values and suppress opposing ones. Behavior-centric methods perform comparably when evaluated only on the steered value, but the two paradigms separate cleanly under both transfer metrics.</p>
+  <div class="two">
+    <figure>
+      <img src="assets/img/fig4_transfer_cont.jpg" alt="Geometric fidelity versus continuous transfer fidelity">
+      <figcaption><b>Figure 4.</b> Geometric alignment (ρ<sub>T</sub>) versus continuous cross-value transfer fidelity (TWTM) on Qwen3.5-9B-Base and Llama3.1-8B.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/img/fig5_transfer_hier.jpg" alt="Hierarchical structure correlation versus hierarchical transfer correlation">
+      <figcaption><b>Figure 5.</b> Hierarchical representational fidelity (ρ<sub>H</sub>) versus hierarchical cross-value transferability (ρ<sub>H</sub><sup>tr</sup>) on Qwen3.5-9B-Base and Llama3.1-8B.</figcaption>
+    </figure>
+  </div>
+  <p>Distribution-driven methods combine high geometric fidelity with strong transfer, while behavior-centric methods cluster near zero on both TWTM and ρ<sub>H</sub><sup>tr</sup>. Pooling all methods and both backbones, geometric fidelity (ρ<sub>T</sub>) predicts cross-value transfer more strongly than raw accuracy gain does, with the gap widening on the rank-based hierarchical metric (Δρ = 0.06 on TWTM, Δρ = 0.18 on ρ<sub>H</sub><sup>tr</sup>).</p>
+</div></section>
+
+<section id="mft"><div class="wrap narrow">
+  <h2>Generalization Beyond Schwartz: Moral Foundations</h2>
+  <p>Revised Moral Foundations Theory splits values into <b>Individualizing</b> (Care, Equality) and <b>Binding</b> (Proportionality, Loyalty, Authority, Purity) foundations. Distribution-driven methods yield positive family separation (Δ<sub>MFT</sub> ≈ 0.04–0.10, versus ≈ 0.001 for the raw-activation baselines), while behavior-centric methods remain near zero or negative.</p>
+  <div class="tbl"><table><thead><tr><th>Method</th><th>Qwen3.5-9B</th><th>Llama3.1-8B</th></tr></thead><tbody><tr class=""><td>LLM Raw Activation</td><td>0.0006</td><td>0.0017</td></tr><tr class="bc"><td>OPT</td><td>0.0107</td><td>0.0272</td></tr><tr class="bc"><td>COLD-Steer</td><td>−0.0064</td><td>−0.0280</td></tr><tr class="bc"><td>BiPO</td><td>−0.0287</td><td>0.0227</td></tr><tr class="dd"><td>ODESteer</td><td>0.0495</td><td>0.0378</td></tr><tr class="dd"><td>SphericalSteer</td><td>0.0932</td><td>0.0909</td></tr><tr class="dd"><td>CAA</td><td>0.0969</td><td>0.1038</td></tr><tr class="dd"><td>SAS</td><td>0.0892</td><td>0.0923</td></tr></tbody></table></div>
+  <p class="note">Effect of steering method on MFT family separation (Δ<sub>MFT</sub>). Positive values indicate greater within-family than cross-family cosine similarity.</p>
+  <h3>Limitations</h3>
+  <p style="font-size:15px;color:var(--muted)">Fine-grained analyses are centered on Schwartz’s theory; MFT specifies only a coarser Individualizing–Binding grouping, so it gives family-level validation rather than a full geometric test. Generalization beyond these two frameworks, across cultures and languages, remains open. Extracted vectors should be read as target-conditioned aggregate directions rather than perfectly monosemantic representations, and most cross-backbone comparisons use a few steering methods due to compute constraints.</p>
+</div></section>
+
+<section id="resources" class="alt"><div class="wrap narrow">
+  <h2>Code &amp; Data</h2>
+  <p>The official repository covers <b>CAA, SAS, SphericalSteer, ODESteer, OPT, COLD-Steer, and BiPO</b>, plus geometry analysis, cross-value transfer, MFT evaluation, and a CLI to evaluate your own steering method against the Schwartz value bank.</p>
+<pre><code>git clone https://github.com/DeepRCL/Steering_Geometry.git
+cd Steering_Geometry
+conda env create -f environment.yml &amp;&amp; conda activate steering-b300
+
+# reproduce CAA on Qwen3.5-9B-Base
+hf download DeepRCL/SteeringGeometry data/final_dataset_200.csv --repo-type dataset --local-dir .
+python reproduction/run.py --experiment qwen_base_caa --execute</code></pre>
+  <pre style="margin-top:14px"><code>from datasets import load_dataset
+schwartz = load_dataset("DeepRCL/SteeringGeometry", "schwartz_experiment", split="train")
+full     = load_dataset("DeepRCL/SteeringGeometry", "schwartz_full", split="train")
+mft      = load_dataset("DeepRCL/SteeringGeometry", "mft_experiment", split="train")</code></pre>
+  <div class="btns" style="justify-content:flex-start">
+    <a class="btn" href="https://github.com/DeepRCL/Steering_Geometry"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub repository</a>
+    <a class="btn alt" href="https://huggingface.co/datasets/DeepRCL/SteeringGeometry"><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 3 7 3 11.5c0 3.2 1.6 5.3 3.4 6.6.8 1.7 3 3.4 5.6 3.4s4.8-1.7 5.6-3.4c1.8-1.3 3.4-3.4 3.4-6.6C21 7 17.5 3 12 3zM9 10.5a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zm6 0a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zM8.5 15.5c1 1.4 2.2 2 3.5 2s2.5-.6 3.5-2c-1.1.5-2.2.7-3.5.7s-2.4-.2-3.5-.7z"/></svg>Hugging Face dataset</a>
+  </div>
+</div></section>
+
+<section id="bibtex"><div class="wrap narrow">
+  <h2>BibTeX</h2>
+  <div class="bib"><button class="btn alt copy" id="copy">Copy</button><pre id="bibtext">@inproceedings{abootorabi-etal-2026-steering,
+    title = &quot;Steering Geometry: Validating Human Value Geometry in {LLM} Steering Space&quot;,
+    author = &quot;Abootorabi, Mohammad Mahdi  and
+      Saghafian, Armin  and
+      Bazshoushtari, Ali  and
+      Rezaei, Hamid  and
+      Hwang, EunJeong  and
+      Shwartz, Vered  and
+      Mousavi, Parvin  and
+      Abolmaesumi, Purang&quot;,
+    editor = &quot;Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond&quot;,
+    booktitle = &quot;Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing&quot;,
+    month = oct,
+    year = &quot;2026&quot;,
+    address = &quot;Budapest, Hungary&quot;,
+    publisher = &quot;Association for Computational Linguistics&quot;,
+    url = &quot;https://aclanthology.org/2026.emnlp-main.2508/&quot;,
+    pages = &quot;57010--57033&quot;,
+    ISBN = &quot;979-8-89176-459-0&quot;
+}</pre></div>
+  <p class="note">Also available as <a href="assets/steering_geometry.bib">steering_geometry.bib</a>.</p>
+</div></section>
+
+<footer><div class="wrap">
+  <p>EMNLP 2026 · Budapest, Hungary · <a href="https://aclanthology.org/2026.emnlp-main.2508/">ACL Anthology</a> · <a href="https://github.com/DeepRCL/Steering_Geometry">Code</a> · <a href="https://huggingface.co/datasets/DeepRCL/SteeringGeometry">Data</a></p>
+  <p><a href="https://aboots.github.io">&larr; Back to aboots.github.io</a></p>
+</div></footer>
+<script src="assets/main.js"></script>
+</body></html>
