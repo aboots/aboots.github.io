@@ -98,8 +98,17 @@ pre code{background:none;padding:0;font-size:inherit}
 .authors{overflow-wrap:anywhere}
 html,body{overflow-x:hidden}
 
-.venue-logo-wrap{display:flex;justify-content:center;margin:26px 0 0}
-.venue-logo{height:76px;width:auto;max-width:90%}
-@media(max-width:600px){.venue-logo{height:56px}}
+.venue-logo-wrap{display:flex;justify-content:center;margin:22px 0 4px}
+.venue-logo{height:64px!important;width:auto!important;max-width:80%!important;border:0!important;border-radius:0!important}
+@media(max-width:600px){.venue-logo{height:48px!important}}
 [data-theme=dark] .venue-logo{background:#fff;padding:8px 14px;border-radius:10px}
 @media (prefers-color-scheme:dark){html:not([data-theme=light]) .venue-logo{background:#fff;padding:8px 14px;border-radius:10px}}
+.cards.two-main{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card .tag{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.takeaway{margin:22px auto 0;max-width:800px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:16px 20px;box-shadow:var(--shadow)}
+.takeaway b{color:var(--accent)}
+
+.poster-box{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:32px;align-items:center;margin-top:18px}
+.poster-thumb img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff;display:block}
+.poster-text p{font-size:16.5px;line-height:1.65}
+@media(max-width:720px){.poster-box{grid-template-columns:1fr}.poster-thumb{max-width:340px;margin:0 auto}}
