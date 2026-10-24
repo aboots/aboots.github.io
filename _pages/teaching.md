@@ -19,7 +19,7 @@ author_profile: true
   - Serving as a bridge between the company and students to ensure clear communication and successful project delivery
   - Grading presentations and documentation throughout the semester
 
-- **APSC 160 – Introduction to Computation in Engineering Design (Summer 2026, Winter 2025)**
+- **APSC 160 – Introduction to Computation in Engineering Design (Fall 2026, Summer 2026, Winter 2025)**
   - Running weekly lab sessions to provide students with additional materials and hands-on practice in C and Python programming
   - Administering and invigilating lab exams, and grading midterm and final assessments and oral‑checking exercises
 ---
