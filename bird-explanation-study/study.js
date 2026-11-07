@@ -1,14 +1,14 @@
-/* Bird Explanation Study: blinded 3-way comparison of explanation cards.
+/* Bird Explanation Study: blinded pairwise comparison of two explanation cards.
  * Card files have opaque ids; the id -> method key is NOT part of this site.
  * Responses are POSTed to a Google Apps Script web app (ENDPOINT) that stores
  * one row per participant (idempotent) in a Google Sheet. */
 "use strict";
 
 const ENDPOINT = "https://script.google.com/macros/s/AKfycby0midHnX-lqZbKYGULL-5DgblEGF0PS--Tr3YTGk1W7qrryYf9jAZTLWghy1vLaFvMIA/exec";
-const VERSION = "v2";
-const LABELS = ["A", "B", "C"];
-const TIE = "tie";              // "Can't tell"
-const QUESTIONS = ["best", "worst", "clearest"];
+const VERSION = "v3";
+const LABELS = ["A", "B"];
+const SAME = "same";            // "No clear difference"
+const MIN_VIEW_MS = 5000;       // Next unlocks after this long on a screen (guards against rushed clicking)
 
 const $ = (id) => document.getElementById(id);
 let config = null;
@@ -17,6 +17,7 @@ let storeKey = null;
 let storageOk = true;
 let shownAt = 0;
 let sending = false;
+let waitTimer = null;
 
 function rand(n) {               // unbiased integer in [0, n)
   const buf = new Uint32Array(1);
@@ -45,11 +46,9 @@ function encode(s) { return btoa(unescape(encodeURIComponent(s))); }
 
 function buildScreens(cfg) {
   const byId = Object.fromEntries(cfg.items.map((it) => [it.item_id, it]));
+  if (cfg.design !== "pairwise" || cfg.items.some((it) => it.cards.length !== 2)) throw new Error("not a pairwise release");
   const main = shuffle(cfg.items.map((it) => ({ item_id: it.item_id, is_repeat: false })));
-  let reps = shuffle(cfg.repeat_item_ids.map((id) => ({ item_id: id, is_repeat: true })));
-  // never show a repeat directly after its first presentation
-  if (reps.length > 1 && reps[0].item_id === main[main.length - 1].item_id) reps = reps.slice(1).concat(reps.slice(0, 1));
-  return main.concat(reps).map((s) => ({ ...s, test: byId[s.item_id].test, order: shuffle(byId[s.item_id].cards) }));
+  return main.map((s) => ({ ...s, test: byId[s.item_id].test, order: shuffle(byId[s.item_id].cards) }));
 }
 
 function setStage(stage) { state.stage = stage; save(); render(); }
@@ -87,46 +86,44 @@ function renderScreen() {
     const img = document.createElement("img"); img.src = cardUrl(cid); img.alt = "Explanation " + LABELS[k];
     block.append(lab, img); cards.append(block);
   });
-  state.current = { best: null, worst: null, clearest: null };
-  document.querySelectorAll(".q-opts").forEach((box) => {
-    box.innerHTML = "";
-    [...LABELS.map((L, k) => [L, k]), ["Can't tell", TIE]].forEach(([text, val]) => {
-      const b = document.createElement("button"); b.type = "button"; b.textContent = text;
-      if (val === TIE) b.classList.add("tie");
-      b.addEventListener("click", () => {
-        state.current[box.dataset.q] = val;
-        box.querySelectorAll("button").forEach((x) => x.classList.toggle("selected", x === b));
-        validate();
-      });
-      box.append(b);
+  state.current = { better: null };
+  const box = document.querySelector('.q-opts[data-q="better"]');
+  box.innerHTML = "";
+  [...LABELS.map((L, k) => ["Explanation " + L, k]), ["No clear difference", SAME]].forEach(([text, val]) => {
+    const b = document.createElement("button"); b.type = "button"; b.textContent = text;
+    if (val === SAME) b.classList.add("tie");
+    b.addEventListener("click", () => {
+      state.current.better = val;
+      box.querySelectorAll("button").forEach((x) => x.classList.toggle("selected", x === b));
+      validate();
     });
+    box.append(b);
   });
-  $("near-identical").checked = false;
-  $("q-error").textContent = "";
   $("btn-next").disabled = true;
   shownAt = performance.now();
+  if (waitTimer) clearTimeout(waitTimer);
+  waitTimer = setTimeout(validate, MIN_VIEW_MS + 50);
+  validate();
   preload(state.idx + 1);
 }
 
 function validate() {
-  const c = state.current;
-  const complete = QUESTIONS.every((q) => c[q] !== null);
-  const clash = c.best !== null && c.best !== TIE && c.best === c.worst;
-  $("q-error").textContent = clash ? "The best and worst explanation must be different." : "";
-  $("btn-next").disabled = !complete || clash;
+  const waited = performance.now() - shownAt >= MIN_VIEW_MS;
+  const chosen = state.current && state.current.better !== null;
+  $("q-wait").textContent = chosen && !waited ? "Please take a few seconds to compare both explanations." : "";
+  $("btn-next").disabled = !(chosen && waited);
 }
 
-function pick(s, v) { return v === TIE ? TIE : s.order[v]; }
-function pos(v) { return v === TIE ? TIE : LABELS[v]; }
+function pick(s, v) { return v === SAME ? SAME : s.order[v]; }
+function pos(v) { return v === SAME ? SAME : LABELS[v]; }
 
 function nextScreen() {
   const s = state.screens[state.idx], c = state.current;
+  if (!c || c.better === null || performance.now() - shownAt < MIN_VIEW_MS) return;
   state.responses.push({
     screen: state.idx, item_id: s.item_id, is_repeat: s.is_repeat,
-    shown_order: s.order,                       // card ids shown as A, B, C
-    best: pick(s, c.best), worst: pick(s, c.worst), clearest: pick(s, c.clearest),
-    best_pos: pos(c.best), worst_pos: pos(c.worst), clearest_pos: pos(c.clearest),
-    near_identical: $("near-identical").checked,
+    shown_order: s.order,                       // card ids shown as A, B
+    better: pick(s, c.better), better_pos: pos(c.better),
     rt_ms: Math.round(performance.now() - shownAt),
   });
   state.idx += 1;

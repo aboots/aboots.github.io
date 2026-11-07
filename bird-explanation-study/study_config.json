@@ -1,147 +1,138 @@
 {
-  "release": "edc2a957c6",
+  "release": "b839eac089",
+  "design": "pairwise",
   "card_background": "clean",
   "items": [
     {
-      "item_id": "it00",
-      "test": "5e564b3466ce",
+      "item_id": "pw00c0",
+      "test": "d97c2e60c061",
       "cards": [
-        "691260ee7f52",
-        "85041187823d",
-        "a2d82f7baeb6"
+        "b1e386e83253",
+        "ccca3c6a27f1"
       ]
     },
     {
-      "item_id": "it01",
-      "test": "da8d14cea717",
+      "item_id": "pw01c0",
+      "test": "6c588a93a8dd",
       "cards": [
-        "109505eecf1e",
-        "9d4f5b9c9bee",
-        "d1fca7daaada"
+        "701be171aa4a",
+        "c76a19d16235"
       ]
     },
     {
-      "item_id": "it02",
-      "test": "b1a97540fefd",
+      "item_id": "pw02c0",
+      "test": "7f79eec4b040",
       "cards": [
-        "0dc43ceced7e",
-        "9d2039ba36a4",
-        "a0f2a73b5f76"
+        "57a821ec267b",
+        "88e7d7bed2dc"
       ]
     },
     {
-      "item_id": "it03",
-      "test": "9d8f3995b71e",
+      "item_id": "pw03c0",
+      "test": "814d8c82c438",
       "cards": [
-        "4fb3a6b09130",
-        "727716cf0181",
-        "b84d79d09a14"
+        "21c256640f55",
+        "43167950ce60"
       ]
     },
     {
-      "item_id": "it04",
-      "test": "66d7c9d46c84",
+      "item_id": "pw04c0",
+      "test": "dfffeb3039ea",
       "cards": [
-        "5a45291be4e7",
-        "7f327f2df5a5",
-        "9b670e34c09f"
+        "a82975021dba",
+        "e95137d84ac1"
       ]
     },
     {
-      "item_id": "it05",
-      "test": "069efa506800",
+      "item_id": "pw05c0",
+      "test": "d6c75219d29e",
       "cards": [
-        "506e84d1bcc4",
-        "796170fbc780",
-        "f235375fe825"
+        "0a04d8613286",
+        "54df300277e5"
       ]
     },
     {
-      "item_id": "it06",
-      "test": "4d9152041839",
+      "item_id": "pw06c0",
+      "test": "874a74d5a62c",
       "cards": [
-        "076ae75dd185",
-        "396f448cdb1c",
-        "86ed368d2a9f"
+        "12f445f8f51a",
+        "73c8625f2de3"
       ]
     },
     {
-      "item_id": "it07",
-      "test": "4a9992448429",
+      "item_id": "pw07c0",
+      "test": "a3563498323b",
       "cards": [
-        "1b8c75588924",
-        "66bd76ca8e7d",
-        "c4ddf1dabe95"
+        "9e7cd3558407",
+        "f28b0110f4b7"
       ]
     },
     {
-      "item_id": "it08",
-      "test": "eda97fa0351a",
+      "item_id": "pw08c0",
+      "test": "70843407489f",
       "cards": [
-        "44a23ac2fd71",
-        "6d08194c41a7",
-        "c790f8fe9f2f"
+        "2e22127f25ac",
+        "c519a4678423"
       ]
     },
     {
-      "item_id": "it09",
-      "test": "d994d126367b",
+      "item_id": "pw09c0",
+      "test": "30bcf57a91e3",
       "cards": [
-        "197460d78027",
-        "b5a90d0aea2b",
-        "bb0758795080"
+        "51698fe0b0af",
+        "96fae2460eea"
       ]
     },
     {
-      "item_id": "it10",
-      "test": "b90146da922d",
+      "item_id": "pw10c0",
+      "test": "3c43b6e64c30",
       "cards": [
-        "55a8bba41ef8",
-        "6703e630b09e",
-        "b812ca5f6d92"
+        "39cc87d4837f",
+        "e7e1be56e070"
       ]
     },
     {
-      "item_id": "it11",
-      "test": "8488512fc7e7",
+      "item_id": "pw11c0",
+      "test": "52f64de2c495",
       "cards": [
-        "05a00f2d8af7",
-        "22b560e5ef8f",
-        "7a6676c96d85"
+        "5df3095545af",
+        "aa9be931672e"
       ]
     },
     {
-      "item_id": "it12",
-      "test": "7667bf4cd486",
+      "item_id": "pw12c0",
+      "test": "1d09744c297f",
       "cards": [
-        "5f0a526b12df",
-        "84b483f39f4b",
-        "88e99184268c"
+        "29b1d86ed68c",
+        "d6aef75d7a50"
       ]
     },
     {
-      "item_id": "it13",
-      "test": "94622a12033b",
+      "item_id": "pw13c0",
+      "test": "ee1544711350",
       "cards": [
-        "044c7e9167f3",
-        "2cb1fc6b58e5",
-        "90c197a2248e"
+        "1058986908b7",
+        "ed9315855631"
       ]
     },
     {
-      "item_id": "it14",
-      "test": "7ffb25dbddf6",
+      "item_id": "pw14c0",
+      "test": "f219a747a730",
       "cards": [
-        "111963b6e64a",
-        "29fd9895d134",
-        "3798be922744"
+        "812de3b24593",
+        "c9b64911e0ee"
+      ]
+    },
+    {
+      "item_id": "pw15c0",
+      "test": "597adbe2e655",
+      "cards": [
+        "101f6eb7083e",
+        "29f1297f6685"
       ]
     }
   ],
-  "repeat_item_ids": [
-    "it08",
-    "it02"
-  ],
+  "repeat_item_ids": [],
   "tutorial": {
     "test": "tutorial_test",
     "card": "tutorial_card"

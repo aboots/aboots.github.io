@@ -19,9 +19,9 @@
   <section class="panel" id="stage-welcome" hidden>
     <h1>How well does an AI explain what it sees?</h1>
     <p>An AI system recognizes bird species in photos that have been damaged by noise, blur, fog, compression and similar effects. It explains each decision by pointing to <strong>regions of the photo</strong> and showing <strong>similar-looking regions from birds it saw during training</strong>.</p>
-    <p>You will see <strong>17 short screens</strong>. Each shows one damaged bird photo and <strong>three different explanations</strong> (A, B, C) of the AI's decision. You pick which explanation looks best and which looks worst (or "Can't tell" if you really cannot decide). There are no right or wrong answers, and you do not need to know anything about birds.</p>
+    <p>You will see <strong>16 short screens</strong>. Each shows one damaged bird photo and <strong>two different explanations</strong> (A and B) of the AI's decision. You pick which explanation is better (or "No clear difference" if you really cannot tell them apart). There are no right or wrong answers, and you do not need to know anything about birds.</p>
     <ul class="facts">
-      <li>Takes about <strong>12–15 minutes</strong>. Please use a laptop or desktop screen.</li>
+      <li>Takes about <strong>8–10 minutes</strong>. Please use a laptop or desktop screen.</li>
       <li>Participation is voluntary and anonymous. We do not collect your name, email or any identifying information.</li>
       <li>You can stop at any time by closing the page; nothing is sent until you press <em>Submit</em> at the end.</li>
       <li>Your answers are used only for research on explainable AI and may be published in aggregate.</li>
@@ -78,27 +78,17 @@
       <figure class="test-figure"><img id="item-test" alt="Damaged bird photo"><figcaption>The damaged photo the AI saw</figcaption></figure>
       <div class="item-instr">
         <h2 id="item-title">Screen</h2>
-        <p>Below are three explanations (A, B, C) of the AI's decision for this photo. Each one draws the AI's boxes on an undamaged copy of the photo. Compare where the boxes fall on the bird and how well they match the training examples, then answer the questions at the bottom.</p>
+        <p>Below are two explanations (A and B) of the AI's decision for this photo. Each one draws the AI's boxes on an undamaged copy of the photo. Compare where the boxes fall on the bird and how well they match the training examples, then answer the question at the bottom.</p>
+        <p class="small">A good explanation puts its boxes on meaningful parts of the bird (head, beak, eye, wing, tail, body markings) and matches them to similar parts in the training examples. A poor one points at background, noise or damage, or matches regions that do not look alike.</p>
         <p class="small">Tip: boxes and frames with the same colour and number belong together.</p>
       </div>
     </div>
     <div id="cards"></div>
     <div class="questions" id="questions">
       <div class="q">
-        <span class="q-text">1. Which explanation focuses <strong>best</strong> on meaningful parts of the bird (not background or noise)?</span>
-        <span class="q-opts" data-q="best"></span>
-      </div>
-      <div class="q">
-        <span class="q-text">2. Which explanation focuses <strong>worst</strong>?</span>
-        <span class="q-opts" data-q="worst"></span>
-      </div>
-      <div class="q">
-        <span class="q-text">3. Overall, which explanation is the <strong>clearest and easiest to understand</strong>?</span>
-        <span class="q-opts" data-q="clearest"></span>
-      </div>
-      <div class="q-foot">
-        <label class="check small"><input type="checkbox" id="near-identical"> Two or more explanations looked almost identical to me</label>
-        <span class="error" id="q-error"></span>
+        <span class="q-text"><strong>Which explanation is better?</strong></span>
+        <span class="q-opts" data-q="better"></span>
+        <span class="error small" id="q-wait"></span>
         <button id="btn-next" disabled>Next</button>
       </div>
     </div>
