@@ -1,0 +1,148 @@
+{
+  "release": "3602bcccd7",
+  "items": [
+    {
+      "item_id": "it00",
+      "test": "f25e262b35c4",
+      "cards": [
+        "b2bf1c7043b2",
+        "d36bb4a7f3ba",
+        "e3c73304ccf2"
+      ]
+    },
+    {
+      "item_id": "it01",
+      "test": "7ef9036380f4",
+      "cards": [
+        "53d8cedb6329",
+        "8b8dcff638d7",
+        "d6c6364bd79e"
+      ]
+    },
+    {
+      "item_id": "it02",
+      "test": "536c07d0def7",
+      "cards": [
+        "9d7bf8d27764",
+        "afc4ff281127",
+        "cf3f03f5302f"
+      ]
+    },
+    {
+      "item_id": "it03",
+      "test": "1f2da18dc5c4",
+      "cards": [
+        "5e936d5d4877",
+        "c88c7e51db53",
+        "e3511b641617"
+      ]
+    },
+    {
+      "item_id": "it04",
+      "test": "c7cfdbd2e756",
+      "cards": [
+        "4beaa959fda5",
+        "610c9938519b",
+        "637cdd5ae10e"
+      ]
+    },
+    {
+      "item_id": "it05",
+      "test": "3a387f78e637",
+      "cards": [
+        "39d1eacac9d5",
+        "855d3382c39f",
+        "f1cfdd638002"
+      ]
+    },
+    {
+      "item_id": "it06",
+      "test": "a9f29e0f30dd",
+      "cards": [
+        "6881b7a55949",
+        "a30d58daf85d",
+        "ca9ad5274887"
+      ]
+    },
+    {
+      "item_id": "it07",
+      "test": "dc169404093d",
+      "cards": [
+        "106adb857278",
+        "44d13fdcc08c",
+        "afc845d8f5e4"
+      ]
+    },
+    {
+      "item_id": "it08",
+      "test": "f5f3bd444c85",
+      "cards": [
+        "4ae972ce4565",
+        "6b8a01641773",
+        "7e4f78f61577"
+      ]
+    },
+    {
+      "item_id": "it09",
+      "test": "799fde3e3d4b",
+      "cards": [
+        "4954e4a6d0a8",
+        "6ac45d864438",
+        "d75ef3d4565e"
+      ]
+    },
+    {
+      "item_id": "it10",
+      "test": "1b0016bb1180",
+      "cards": [
+        "054a9bc0aadc",
+        "4040c1e6019f",
+        "591693ea7b82"
+      ]
+    },
+    {
+      "item_id": "it11",
+      "test": "0ef32fbdaa21",
+      "cards": [
+        "6350b19f2277",
+        "7c32ec2adc45",
+        "a5be613bcc4b"
+      ]
+    },
+    {
+      "item_id": "it12",
+      "test": "c418b87f8946",
+      "cards": [
+        "ab5056798225",
+        "f01e84f9b44b",
+        "fc4e0553705f"
+      ]
+    },
+    {
+      "item_id": "it13",
+      "test": "f7598401b930",
+      "cards": [
+        "b44dac4721ab",
+        "ec02e6eaf92c",
+        "f0204602f0f4"
+      ]
+    },
+    {
+      "item_id": "it14",
+      "test": "b5ec62b3969a",
+      "cards": [
+        "469bfa478301",
+        "d8014a40e69d",
+        "d86f313ac35f"
+      ]
+    }
+  ],
+  "repeat_item_ids": [
+    "it08",
+    "it02"
+  ],
+  "tutorial": {
+    "test": "tutorial_test",
+    "card": "tutorial_card"
+  }
+}
