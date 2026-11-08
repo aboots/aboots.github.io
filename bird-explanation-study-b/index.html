@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bird Explanation Study</title>
+<link rel="stylesheet" href="study.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Bird Explanation Study</div>
+  <div class="progress" id="progress" hidden><div class="bar" id="progress-bar"></div><span id="progress-text"></span></div>
+</header>
+
+<main id="app">
+  <p class="error banner" id="storage-warning" hidden>Your browser is blocking local storage, so progress cannot be saved. Please do not reload or close this page until you have submitted.</p>
+  <!-- Welcome / consent -->
+  <section class="panel" id="stage-welcome" hidden>
+    <h1>How well does an AI explain what it sees?</h1>
+    <p>An AI system recognizes bird species in photos that have been damaged by noise, blur, fog, compression and similar effects. It explains each decision by pointing to <strong>regions of the photo</strong> and showing <strong>similar-looking regions from birds it saw during training</strong>.</p>
+    <p>You will see <strong>15 short screens</strong>. Each shows one damaged bird photo and <strong>two different explanations</strong> (A and B) of the AI's decision. You pick which explanation is better (or "No clear difference" if you really cannot tell them apart). There are no right or wrong answers, and you do not need to know anything about birds.</p>
+    <ul class="facts">
+      <li>Takes about <strong>8–10 minutes</strong>. Please use a laptop or desktop screen.</li>
+      <li>Participation is voluntary and anonymous. We do not collect your name, email or any identifying information.</li>
+      <li>You can stop at any time by closing the page; nothing is sent until you press <em>Submit</em> at the end.</li>
+      <li>Your answers are used only for research on explainable AI and may be published in aggregate.</li>
+    </ul>
+    <label class="check"><input type="checkbox" id="consent"> I am at least 19 years old, I have read the above, and I agree to take part.</label>
+    <div class="actions"><button id="btn-start" disabled>Start</button></div>
+    <p class="small" id="width-warning" hidden>Your window looks narrow. The images are easier to compare on a wider screen.</p>
+  </section>
+
+  <!-- Background -->
+  <section class="panel" id="stage-background" hidden>
+    <h2>A few quick questions about you</h2>
+    <fieldset>
+      <legend>How familiar are you with birds (e.g., birdwatching, telling species apart)?</legend>
+      <label><input type="radio" name="bird" value="none"> Not at all</label>
+      <label><input type="radio" name="bird" value="some"> Somewhat</label>
+      <label><input type="radio" name="bird" value="expert"> Very (experienced birder / expert)</label>
+    </fieldset>
+    <fieldset>
+      <legend>How familiar are you with machine learning?</legend>
+      <label><input type="radio" name="ml" value="none"> Not at all</label>
+      <label><input type="radio" name="ml" value="some"> Somewhat (course / occasional use)</label>
+      <label><input type="radio" name="ml" value="expert"> Very (I do ML research or engineering)</label>
+    </fieldset>
+    <fieldset>
+      <legend>Have you worked on the research project behind this study?</legend>
+      <label><input type="radio" name="insider" value="no"> No</label>
+      <label><input type="radio" name="insider" value="yes"> Yes</label>
+    </fieldset>
+    <fieldset>
+      <legend>Have you already completed another version of this bird explanation study (same kind of photos and explanations)?</legend>
+      <label><input type="radio" name="prior" value="no"> No</label>
+      <label><input type="radio" name="prior" value="yes"> Yes</label>
+    </fieldset>
+    <div class="actions"><button id="btn-bg" disabled>Continue</button></div>
+  </section>
+
+  <!-- Tutorial -->
+  <section class="panel" id="stage-tutorial" hidden>
+    <h2>How to read an explanation</h2>
+    <div class="tutorial-grid">
+      <figure><img id="tut-test" alt="Example damaged bird photo"><figcaption>The damaged photo the AI saw.</figcaption></figure>
+      <div>
+        <p>Each explanation is one row like the one below.</p>
+        <ul>
+          <li><strong>Left:</strong> an <strong>undamaged copy</strong> of the same photo, with small <strong>coloured boxes</strong> marking the regions the AI relied on when it looked at the damaged photo. (We draw the boxes on the undamaged copy so you can see which parts of the bird they cover.) Boxes of one colour (and number) belong together.</li>
+          <li><strong>Right:</strong> five <strong>training examples</strong>. Example <em>k</em> has a frame of the same colour as group <em>k</em> on the left, and its own boxes show the region the AI thinks looks alike.</li>
+        </ul>
+        <p>A <strong>good</strong> explanation puts its boxes on meaningful parts of the bird (head, beak, eye, wing, tail, body markings) and matches them to similar parts in the training examples. A <strong>poor</strong> one points at background, noise or damage, or matches regions that do not look alike.</p>
+      </div>
+    </div>
+    <figure class="card-figure"><img id="tut-card" alt="Example explanation"><figcaption>Example explanation (not part of the study).</figcaption></figure>
+    <div class="actions"><button id="btn-tut">I understand, begin</button></div>
+  </section>
+
+  <!-- Items -->
+  <section id="stage-items" hidden>
+    <div class="item-head">
+      <figure class="test-figure"><img id="item-test" alt="Damaged bird photo"><figcaption>The damaged photo the AI saw</figcaption></figure>
+      <div class="item-instr">
+        <h2 id="item-title">Screen</h2>
+        <p>Below are two explanations (A and B) of the AI's decision for this photo. Each one draws the AI's boxes on an undamaged copy of the photo. Compare where the boxes fall on the bird and how well they match the training examples, then answer the question at the bottom.</p>
+        <p class="small">A good explanation puts its boxes on meaningful parts of the bird (head, beak, eye, wing, tail, body markings) and matches them to similar parts in the training examples. A poor one points at background, noise or damage, or matches regions that do not look alike.</p>
+        <p class="small">Tip: boxes and frames with the same colour and number belong together.</p>
+      </div>
+    </div>
+    <div id="cards"></div>
+    <div class="questions" id="questions">
+      <div class="q">
+        <span class="q-text"><strong>Which explanation is better?</strong></span>
+        <span class="q-opts" data-q="better"></span>
+        <span class="error small" id="q-wait"></span>
+        <button id="btn-reload" type="button" hidden>Reload images</button>
+        <button id="btn-next" disabled>Next</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comment + submit -->
+  <section class="panel" id="stage-comment" hidden>
+    <h2>Almost done</h2>
+    <label for="comment">Anything you want to tell us about the explanations or the study? (optional)</label>
+    <textarea id="comment" rows="4" maxlength="2000"></textarea>
+    <div class="actions"><button id="btn-submit">Submit</button></div>
+    <p class="error" id="submit-error"></p>
+  </section>
+
+  <!-- Done -->
+  <section class="panel" id="stage-done" hidden>
+    <h2 id="done-title">Thank you!</h2>
+    <p id="done-msg"></p>
+    <div id="fallback" hidden>
+      <p>We could not reach our server. Please copy the code below and send it to the person who shared this study with you.</p>
+      <textarea id="fallback-code" rows="6" readonly></textarea>
+      <div class="actions"><button id="btn-copy">Copy code</button><button id="btn-retry">Try sending again</button></div>
+    </div>
+  </section>
+</main>
+<script src="study.js"></script>
+</body>
+</html>

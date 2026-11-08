@@ -1,0 +1,132 @@
+{
+  "release": "e9d1381386",
+  "design": "pairwise",
+  "card_background": "clean",
+  "items": [
+    {
+      "item_id": "pw00c0",
+      "test": "6c50ce504c21",
+      "cards": [
+        "da211f923374",
+        "f4767b30d121"
+      ]
+    },
+    {
+      "item_id": "pw01c0",
+      "test": "e0bf44c5ab89",
+      "cards": [
+        "532f5d1cc128",
+        "d4f65f68762a"
+      ]
+    },
+    {
+      "item_id": "pw03c0",
+      "test": "7a13e05848e3",
+      "cards": [
+        "1db92492ce95",
+        "7dc4a3bc41cb"
+      ]
+    },
+    {
+      "item_id": "pw04c0",
+      "test": "1a8c68d5ca98",
+      "cards": [
+        "2cec19d13c30",
+        "682e58d3c995"
+      ]
+    },
+    {
+      "item_id": "pw05c0",
+      "test": "105d6cdfc509",
+      "cards": [
+        "074e7822be40",
+        "7390099756ec"
+      ]
+    },
+    {
+      "item_id": "pw08c0",
+      "test": "490ea278072d",
+      "cards": [
+        "1643d31b2c44",
+        "529a92dcff89"
+      ]
+    },
+    {
+      "item_id": "pw09c0",
+      "test": "6dc951183ab5",
+      "cards": [
+        "89e65ae28883",
+        "d8309777e974"
+      ]
+    },
+    {
+      "item_id": "pw13c0",
+      "test": "c98efebd3f42",
+      "cards": [
+        "18b1a5052524",
+        "3f90c5984a2e"
+      ]
+    },
+    {
+      "item_id": "pw14c0",
+      "test": "8dc2854688c3",
+      "cards": [
+        "455315bcfd1d",
+        "d50832fcf9f3"
+      ]
+    },
+    {
+      "item_id": "br00",
+      "test": "1ed57b28a664",
+      "cards": [
+        "18b54e831f01",
+        "f8f785cd0ab0"
+      ]
+    },
+    {
+      "item_id": "br01",
+      "test": "cacfde487d1c",
+      "cards": [
+        "21a2bfb34dc7",
+        "e490f9040dbe"
+      ]
+    },
+    {
+      "item_id": "br02",
+      "test": "dd10b37897e4",
+      "cards": [
+        "95d35df251bd",
+        "966f3efa0a19"
+      ]
+    },
+    {
+      "item_id": "br03",
+      "test": "de244b7d5db9",
+      "cards": [
+        "bfce16ad34de",
+        "dca23d72f8e7"
+      ]
+    },
+    {
+      "item_id": "br04",
+      "test": "f5a9d6ad8936",
+      "cards": [
+        "97e3eb3e87d3",
+        "fab52fd08146"
+      ]
+    },
+    {
+      "item_id": "br05",
+      "test": "8d54b7311913",
+      "cards": [
+        "9d4cbb0e9469",
+        "f4c58593bbe4"
+      ]
+    }
+  ],
+  "repeat_item_ids": [],
+  "tutorial": {
+    "test": "tutorial_test",
+    "card": "tutorial_card"
+  }
+}
