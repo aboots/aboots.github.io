@@ -5,7 +5,10 @@
 "use strict";
 
 const ENDPOINT = "https://script.google.com/macros/s/AKfycby0midHnX-lqZbKYGULL-5DgblEGF0PS--Tr3YTGk1W7qrryYf9jAZTLWghy1vLaFvMIA/exec";
-const VERSION = "v3";
+const VERSION = "v3";          // also part of the storage key: unchanged so in-progress participants resume
+// Instruction wording of the index.html actually displayed (the i1 page has no data-instr), so a cached
+// old page running this script is still tagged i1. i2 = ranking + part matching made explicit (2026-11-08).
+const INSTR = document.documentElement.dataset.instr || "i1";
 const LABELS = ["A", "B"];
 const SAME = "same";            // "No clear difference"
 const MIN_VIEW_MS = 5000;       // Next unlocks after this long on a screen (guards against rushed clicking)
@@ -125,6 +128,7 @@ function nextScreen() {
     shown_order: s.order,                       // card ids shown as A, B
     better: pick(s, c.better), better_pos: pos(c.better),
     rt_ms: Math.round(performance.now() - shownAt),
+    instr: INSTR,                               // wording shown on this screen
   });
   state.idx += 1;
   if (state.idx >= state.screens.length) state.stage = "comment";   // one atomic save below
@@ -137,6 +141,7 @@ function buildPayload() {
     version: VERSION, release: config.release, pid: state.pid,
     started_at: state.startedAt, consent_at: state.consentAt, submitted_at: new Date().toISOString(),
     background: state.bg, tutorial_ms: state.tutorialMs, screens: state.screens.length,
+    instructions: state.instr || "i1",          // tutorial wording this participant read (missing = read before i2)
     viewport: [window.innerWidth, window.innerHeight], storage_ok: storageOk,
     responses: state.responses, comment: (state.commentDraft || "").slice(0, 2000),
   });
@@ -185,6 +190,7 @@ function wire() {
   });
   $("btn-tut").addEventListener("click", () => {
     state.tutorialMs = Date.now() - (state.tutorialStart || Date.now());
+    state.instr = INSTR;
     setStage("items");
   });
   $("btn-next").addEventListener("click", nextScreen);

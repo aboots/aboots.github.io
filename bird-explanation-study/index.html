@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-instr="i2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -62,10 +62,16 @@
       <div>
         <p>Each explanation is one row like the one below.</p>
         <ul>
-          <li><strong>Left:</strong> an <strong>undamaged copy</strong> of the same photo, with small <strong>coloured boxes</strong> marking the regions the AI relied on when it looked at the damaged photo. (We draw the boxes on the undamaged copy so you can see which parts of the bird they cover.) Boxes of one colour (and number) belong together.</li>
-          <li><strong>Right:</strong> five <strong>training examples</strong>. Example <em>k</em> has a frame of the same colour as group <em>k</em> on the left, and its own boxes show the region the AI thinks looks alike.</li>
+          <li><strong>Left:</strong> an <strong>undamaged copy</strong> of the same photo, with small <strong>coloured, numbered boxes</strong> marking the regions the AI relied on when it looked at the damaged photo. (We draw the boxes on the undamaged copy so you can see which parts of the bird they cover.) Boxes with the same colour and number belong together.</li>
+          <li><strong>Right:</strong> five <strong>training examples</strong>, numbered 1 to 5. Example <em>k</em> has the same colour and number as group <em>k</em> on the left; its own boxes show the region the AI thinks looks like group <em>k</em>.</li>
+          <li><strong>The numbers rank the evidence by importance.</strong> Number 1 contributed most to the AI's score for the bird species it chose, number 2 the next most, and so on down to number 5. Each number applies to its whole group of boxes and to its training example.</li>
         </ul>
-        <p>A <strong>good</strong> explanation puts its boxes on meaningful parts of the bird (head, beak, eye, wing, tail, body markings) and matches them to similar parts in the training examples. A <strong>poor</strong> one points at background, noise or damage, or matches regions that do not look alike.</p>
+        <p><strong>When you compare two explanations, check two things:</strong></p>
+        <ol>
+          <li><strong>The order: is the most important evidence on the bird?</strong> Give the most weight to the top of the ranking (number 1, then 2, …). Do these boxes cover meaningful parts of the bird (head, beak, eye, wing, tail, body markings), or background, noise or damage? Poor evidence near the top of the ranking is worse than poor evidence near the bottom.</li>
+          <li><strong>The matches: does each part match the same kind of part?</strong> For each number, compare the boxed region on the left with the boxed region in the training example with the same number. A good match shows the same kind of part and looks alike (head with head, wing with wing). A poor match pairs different parts (for example, a wing with a head) or a bird part with background.</li>
+        </ol>
+        <p>The <strong>better</strong> explanation is the one whose most important evidence is on meaningful parts of the bird and whose matches make sense.</p>
       </div>
     </div>
     <figure class="card-figure"><img id="tut-card" alt="Example explanation"><figcaption>Example explanation (not part of the study).</figcaption></figure>
@@ -78,8 +84,11 @@
       <figure class="test-figure"><img id="item-test" alt="Damaged bird photo"><figcaption>The damaged photo the AI saw</figcaption></figure>
       <div class="item-instr">
         <h2 id="item-title">Screen</h2>
-        <p>Below are two explanations (A and B) of the AI's decision for this photo. Each one draws the AI's boxes on an undamaged copy of the photo. Compare where the boxes fall on the bird and how well they match the training examples, then answer the question at the bottom.</p>
-        <p class="small">A good explanation puts its boxes on meaningful parts of the bird (head, beak, eye, wing, tail, body markings) and matches them to similar parts in the training examples. A poor one points at background, noise or damage, or matches regions that do not look alike.</p>
+        <p>Below are two explanations (A and B) of the AI's decision for this photo. Each one draws the AI's boxes on an undamaged copy of the photo. Compare them on these two points, then answer the question at the bottom.</p>
+        <ol class="small">
+          <li><strong>Order:</strong> the numbers rank the evidence by importance (1 = contributed most to the AI's score for the species it chose). Are the top-ranked boxes on meaningful parts of the bird (head, beak, eye, wing, tail, body markings) rather than background, noise or damage?</li>
+          <li><strong>Matches:</strong> for each number, does the boxed region on the left show the same kind of part as the boxed region in the training example with that number (head with head, wing with wing), and do they look alike?</li>
+        </ol>
         <p class="small">Tip: boxes and frames with the same colour and number belong together.</p>
       </div>
     </div>
@@ -114,6 +123,6 @@
     </div>
   </section>
 </main>
-<script src="study.js"></script>
+<script src="study.js?v=i2"></script>
 </body>
 </html>
