@@ -6,6 +6,8 @@ author_profile: true
 ---
 ## Publications
 
+- **Mohammad Mahdi Abootorabi**, Nooshin Maghsoodi, Armin Saadat, Obed Dzikunu, Zhuoxin Guo, Hannes Cash, Ferdinand Luger, Adam Kinnaird, Brian Wodlinger, Parvin Mousavi, Purang Abolmaesumi. ProtoCouncil: Multi-Encoder Anatomical Prototypes for Prostate Cancer Detection in Micro-Ultrasound. *Under review*, November 2026. &nbsp; [Preprint](https://arxiv.org/abs/2611.09058) [GitHub](https://github.com/DeepRCL/ProtoCouncil)
+
 - Varsha Suresh\*, **Mohammad Mahdi Abootorabi\***, Mohamed Salman, M. Hamza Mughal, Christian Theobalt, Ashwin Ram, Jürgen Steimle, Vera Demberg. Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures. *NeurIPS 2026 Main Track*. &nbsp; [Preprint](https://arxiv.org/abs/2605.30608)
 
 - **Mohammad Mahdi Abootorabi**, Armin Saghafian, Ali Bazshoushtari, Hamid Rezaei, EunJeong Hwang, Vered Shwartz, Parvin Mousavi, Purang Abolmaesumi. Steering Geometry: Validating Human Value Geometry in LLM Steering Space.  *EMNLP 2026 Main Conference (top 15.4%)*. &nbsp; [ACL Anthology](https://aclanthology.org/2026.emnlp-main.2508/) [GitHub](https://github.com/DeepRCL/Steering_Geometry) [Dataset](https://huggingface.co/datasets/DeepRCL/SteeringGeometry)
