@@ -55,6 +55,17 @@
       </div>
     {% endif %}
   {% endif %}
+  {% if variant == "row" and pub.preview %}
+    {% if bib_url != "" %}
+      <a class="pub-thumb" href="{{ bib_url }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ pub.preview | relative_url }}" alt="">
+      </a>
+    {% else %}
+      <div class="pub-thumb" aria-hidden="true">
+        <img src="{{ pub.preview | relative_url }}" alt="">
+      </div>
+    {% endif %}
+  {% endif %}
   <div class="pub-body">
     <div class="pub-meta">
       {% if pub.status == "under_review" %}
