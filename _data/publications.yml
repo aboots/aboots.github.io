@@ -1,0 +1,494 @@
+# Publications rendered on /research/.
+#
+# To feature a paper, set selected: true (highlight: true also works).
+# Featured cards follow the order of entries in this file. Delete the flag to
+# remove a paper from Selected publications.
+#
+# Optional fields:
+#   preview: "/images/publications/example.webp"  teaser on a featured card and a thumbnail in the year list
+#   preview_alt: "What the figure shows"
+#   month, detail, note, venue       venue is the booktitle used for BibTeX
+#   kind: findings | workshop        adds a second pill; omit for a main venue
+#   status: published | under_review | preprint
+#   venue_class: neurips, emnlp, acl, miccai, mlhc, iclr, ipcai, acm, ecir,
+#                semeval, spie, review, preprint
+#   topics: medical, multimodal, nlp, survey, ml
+#   equal: true                      on an author, prints the equal-contribution *
+#   me: true                         bold an author whose name is not site.author.name
+#   bibtex: |                        optional full override of the generated BibTeX
+#   links: label, icon, url
+#     icons: paper, arxiv, code, project, dataset, poster, models, openreview
+#
+# His name is bolded automatically when it matches site.author.name.
+
+- id: abootorabi2026protocouncil
+  title: "ProtoCouncil: Multi-Encoder Anatomical Prototypes for Prostate Cancer Detection in Micro-Ultrasound"
+  status: under_review
+  venue_class: review
+  venue: "Under review"
+  year: 2026
+  month: November
+  topics: [medical]
+  preview: /images/publications/protocouncil.webp
+  preview_alt: "ProtoCouncil pipeline: three encoders propose anatomical prototypes, then a label-free vote fuses or abstains."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+    - name: Nooshin Maghsoodi
+    - name: Armin Saadat
+    - name: Obed Dzikunu
+    - name: Zhuoxin Guo
+    - name: Hannes Cash
+    - name: Ferdinand Luger
+    - name: Adam Kinnaird
+    - name: Brian Wodlinger
+    - name: Parvin Mousavi
+    - name: Purang Abolmaesumi
+  links:
+    - label: arXiv
+      icon: arxiv
+      url: https://arxiv.org/abs/2611.09058
+    - label: Code
+      icon: code
+      url: https://github.com/DeepRCL/ProtoCouncil
+
+- id: suresh2026semantic
+  title: "Semantic Motion Anchors: Bridging Motion and Meaning in Co-Speech Gestures"
+  selected: true
+  status: published
+  abbr: NeurIPS
+  venue_class: neurips
+  venue: "NeurIPS 2026 Main Track"
+  detail: "Main Track"
+  year: 2026
+  topics: [multimodal]
+  preview: /images/publications/semantic-motion-anchors.webp
+  preview_alt: "Overview of semantic motion anchors: contrastive gesture and speech encoders supervised by structured semantic descriptions."
+  authors:
+    - name: Varsha Suresh
+      equal: true
+    - name: Mohammad Mahdi Abootorabi
+      equal: true
+    - name: Mohamed Salman
+    - name: M. Hamza Mughal
+    - name: Christian Theobalt
+    - name: Ashwin Ram
+    - name: Jürgen Steimle
+    - name: Vera Demberg
+  links:
+    - label: arXiv
+      icon: arxiv
+      url: https://arxiv.org/abs/2605.30608
+
+- id: abootorabi2026steering
+  title: "Steering Geometry: Validating Human Value Geometry in LLM Steering Space"
+  selected: true
+  status: published
+  abbr: EMNLP
+  venue_class: emnlp
+  venue: "EMNLP 2026 Main Conference (top 15.4%)"
+  detail: "Main Conference (top 15.4%)"
+  year: 2026
+  topics: [nlp]
+  preview: /images/publications/steering-geometry.webp
+  preview_alt: "Steering Geometry pipeline: contrastive value benchmark, steering-vector extraction, and geometry validation."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+    - name: Armin Saghafian
+    - name: Ali Bazshoushtari
+    - name: Hamid Rezaei
+    - name: EunJeong Hwang
+    - name: Vered Shwartz
+    - name: Parvin Mousavi
+    - name: Purang Abolmaesumi
+  links:
+    - label: Paper
+      icon: paper
+      url: https://aclanthology.org/2026.emnlp-main.2508/
+    - label: Code
+      icon: code
+      url: https://github.com/DeepRCL/Steering_Geometry
+    - label: Dataset
+      icon: dataset
+      url: https://huggingface.co/datasets/DeepRCL/SteeringGeometry
+
+- id: abootorabi2026prototta
+  title: "ProtoTTA: Prototype-Guided Test-Time Adaptation"
+  status: published
+  abbr: ICLR
+  venue_class: iclr
+  kind: workshop
+  venue: "Third Workshop on Test-Time Updates (Main Track) at ICLR 2026, submitted to ICLR 2027"
+  detail: "Third Workshop on Test-Time Updates (Main Track) at ICLR 2026, submitted to ICLR 2027"
+  year: 2026
+  month: April
+  topics: [ml]
+  preview: /images/publications/prototta.webp
+  preview_alt: "ProtoTTA method: prototype selection, reliable-sample filtering, and a weighted prototype loss at test time."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+    - name: Parvin Mousavi
+    - name: Purang Abolmaesumi
+    - name: Evan Shelhamer
+  links:
+    - label: arXiv
+      icon: arxiv
+      url: https://arxiv.org/abs/2604.15494
+    - label: OpenReview
+      icon: openreview
+      url: https://openreview.net/pdf?id=ZpqPlsdQTn
+    - label: Code
+      icon: code
+      url: https://github.com/DeepRCL/ProtoTTA
+
+- id: dzikunu2026prostate
+  title: "Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound"
+  status: published
+  abbr: MLHC
+  venue_class: mlhc
+  venue: "MLHC 2026"
+  year: 2026
+  topics: [medical]
+  preview: /images/publications/prostate-anatomy.webp
+  preview_alt: "Training and test-time anatomical adaptation for micro-ultrasound prostate cancer detection."
+  authors:
+    - name: Obed Korshie Dzikunu
+    - name: Mohammad Mahdi Abootorabi
+    - name: Mohamed Harmanani
+    - name: Paul F R Wilson
+    - name: Emma Willis
+    - name: Ferdinand Luger
+    - name: Adam Kinnaird
+    - name: Brian Wodlinger
+    - name: Parvin Mousavi
+    - name: Purang Abolmaesumi
+  links:
+    - label: Paper
+      icon: paper
+      url: https://proceedings.mlr.press/v340/dzikunu26a.html
+
+- id: abootorabi2026bloombench
+  title: "Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models"
+  status: published
+  abbr: ACL
+  venue_class: acl
+  kind: findings
+  venue: "Findings of ACL 2026"
+  year: 2026
+  topics: [multimodal, nlp]
+  preview: /images/publications/bloombench.webp
+  preview_alt: "BloomBench construction pipeline, from scenario ideation through bilingual VQA and human verification."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+      equal: true
+    - name: Omid Ghahroodi
+      equal: true
+    - name: Anas Madkoor
+    - name: Marzia Nouri
+    - name: Doratossadat Dastgheib
+    - name: Ehsaneddin Asgari
+  links:
+    - label: Paper
+      icon: paper
+      url: https://aclanthology.org/2026.findings-acl.1416/
+    - label: Code
+      icon: code
+      url: https://github.com/qcri/Almieyar-Oryx-BloomBench
+    - label: Dataset
+      icon: dataset
+      url: https://huggingface.co/datasets/QCRI/BloomBench
+
+- id: abootorabi2026wheretolook
+  title: "Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-Ultrasound Prostate Cancer Detection"
+  selected: true
+  status: published
+  abbr: MICCAI
+  venue_class: miccai
+  venue: "Early Accepted at MICCAI 2026 (top 9%)"
+  detail: "Early Accepted (top 9%)"
+  year: 2026
+  topics: [medical]
+  preview: /images/publications/where-to-look.webp
+  preview_alt: "Prost-RL framework: a policy learns spatial attention maps that guide multi-task micro-ultrasound cancer detection."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+    - name: Sina Namazi
+    - name: Armin Saadat Boroujeni
+    - name: Lyuyang Wang
+    - name: Obed Dzikunu
+    - name: Paul F. R. Wilson
+    - name: Zhuoxin Guo
+    - name: Brian Wodlinger
+    - name: Parvin Mousavi
+    - name: Purang Abolmaesumi
+  links:
+    - label: Paper
+      icon: paper
+      url: https://papers.miccai.org/miccai-2026/0577-Paper6168.html
+
+- id: wang2026echo
+  title: "Echocardiography Multi-video Report Generation Through Anatomical and Functional Aware Hierarchical Q-former"
+  status: published
+  abbr: MICCAI
+  venue_class: miccai
+  kind: workshop
+  venue: "MICCAI 2026 Workshop ASMUS"
+  detail: ASMUS
+  year: 2026
+  topics: [medical]
+  preview: /images/publications/echo-qformer.webp
+  preview_alt: "Echo report model: a hierarchical Q-former links anatomical and functional concepts to video tokens."
+  authors:
+    - name: Lyuyang Wang
+    - name: Mohammad Mahdi Abootorabi
+    - name: Armin Saadat
+    - name: Victoria Wu
+    - name: Nima Hashemi
+    - name: Samira Sojoudi
+    - name: Xiangteng He
+    - name: Leonid Sigal
+    - name: Christina Luong
+    - name: Teresa Tsang
+    - name: Purang Abolmaesumi
+  links:
+    - label: Paper
+      icon: paper
+      url: https://papers.miccai.org/miccai-2026-sat/paper/ASMUS_003.pdf
+
+- id: willis2026guideus
+  title: "GUIDE-US: Grade-Informed Unpaired Distillation of Encoder Knowledge from Histopathology to Micro-UltraSound"
+  status: published
+  abbr: IPCAI
+  venue_class: ipcai
+  venue: "IPCAI 2026"
+  year: 2026
+  topics: [medical]
+  preview: /images/publications/guide-us.webp
+  preview_alt: "GUIDE-US architecture: a histopathology teacher distills grade-aware knowledge into a micro-ultrasound student."
+  authors:
+    - name: Emma Willis
+      equal: true
+    - name: Tarek Elghareb
+      equal: true
+    - name: Paul F. R. Wilson
+    - name: Minh Nguyen Nhat To
+    - name: Mohammad Mahdi Abootorabi
+    - name: Amoon Jamzad
+    - name: Brian Wodlinger
+    - name: Parvin Mousavi
+    - name: Purang Abolmaesumi
+  links:
+    - label: arXiv
+      icon: arxiv
+      url: https://arxiv.org/abs/2602.19005
+
+- id: elahimanesh2026structure
+  title: "Structure Matters: Evaluating Multi-Agent Orchestration in Generative Therapeutic Chatbots"
+  status: published
+  abbr: ACM CUI
+  venue_class: acm
+  venue: "ACM CUI 2026"
+  year: 2026
+  topics: [nlp]
+  preview: /images/publications/structure-matters.webp
+  preview_alt: "Study design comparing multi-agent, single-agent, and unguided therapeutic chatbots."
+  authors:
+    - name: Sina Elahimanesh
+    - name: Mohammadali Mohammadkhani
+      equal: true
+    - name: Sara Zahedi Movahed
+      equal: true
+    - name: Mohammad Mahdi Abootorabi
+      equal: true
+    - name: Shayan Salehi
+    - name: Abbas Edalat
+  links:
+    - label: arXiv
+      icon: arxiv
+      url: https://arxiv.org/abs/2603.00774
+
+- id: abootorabi2025mmrag
+  title: "Ask in Any Modality: A Comprehensive Survey on Multimodal Retrieval-Augmented Generation"
+  selected: true
+  status: published
+  abbr: ACL
+  venue_class: acl
+  kind: findings
+  venue: "Findings of ACL 2025"
+  year: 2025
+  month: July
+  note: "+175 Citations and +545 GitHub Stars"
+  topics: [survey, multimodal, nlp]
+  preview: /images/publications/mm-rag.webp
+  preview_alt: "Overview of a multimodal retrieval-augmented generation system, from query and retrieval through fusion and generation."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+    - name: Amirhosein Zobeiri
+    - name: Mahdi Dehghani
+    - name: Mohammadali Mohammadkhani
+    - name: Bardia Mohammadi
+    - name: Omid Ghahroodi
+    - name: Mahdieh Soleymani Baghshah
+    - name: Ehsaneddin Asgari
+  links:
+    - label: Paper
+      icon: paper
+      url: https://aclanthology.org/2025.findings-acl.861/
+    - label: Code
+      icon: code
+      url: https://github.com/llm-lab-org/Multimodal-RAG-Survey
+    - label: Project
+      icon: project
+      url: https://multimodalrag.github.io/
+
+- id: abootorabi2025clasp
+  title: "CLASP: Contrastive Language-Speech Pretraining for Multilingual Multimodal Information Retrieval"
+  selected: true
+  status: published
+  abbr: ECIR
+  venue_class: ecir
+  venue: "ECIR 2025"
+  year: 2025
+  month: April
+  topics: [multimodal, nlp]
+  preview: /images/publications/clasp.webp
+  preview_alt: "CLASP overview: contrastive training of speech, spectrogram, and text encoders, plus the retrieval task."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+    - name: Ehsaneddin Asgari
+  links:
+    - label: arXiv
+      icon: arxiv
+      url: https://arxiv.org/abs/2412.13071
+    - label: Paper
+      icon: paper
+      url: https://dl.acm.org/doi/10.1007/978-3-031-88717-8_2
+    - label: Project
+      icon: project
+      url: https://clasp1.github.io/
+    - label: Models
+      icon: models
+      url: https://huggingface.co/llm-lab/CLASP
+    - label: Dataset
+      icon: dataset
+      url: https://huggingface.co/datasets/llm-lab/SpeechBrown
+    - label: Code
+      icon: code
+      url: https://github.com/language-modeling-lab/CLASP
+
+- id: abootorabi2025multimind
+  title: "MultiMind at SemEval-2025 Task 7: Crosslingual Fact-Checked Claim Retrieval via Multi-Source Alignment"
+  status: published
+  abbr: SemEval
+  venue_class: semeval
+  kind: workshop
+  venue: "SemEval at ACL 2025"
+  detail: "at ACL"
+  year: 2025
+  month: July
+  topics: [nlp]
+  preview: /images/publications/multimind.webp
+  preview_alt: "MultiMind pipeline: dual encoders, contrastive scoring, and LLM reranking for cross-lingual claim retrieval."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+      equal: true
+    - name: Alireza Ghahramani Kure
+      equal: true
+    - name: Mohammadali Mohammadkhani
+    - name: Sina Elahimanesh
+    - name: Mohammad Ali Ali Panah
+  links:
+    - label: Paper
+      icon: paper
+      url: https://aclanthology.org/2025.semeval-1.303/
+
+- id: abootorabi2025animation
+  title: "Generative AI for Character Animation: A Comprehensive Survey of Techniques, Applications, and Future Directions"
+  status: preprint
+  venue_class: preprint
+  year: 2025
+  month: May
+  note: "+40 Citations"
+  topics: [survey, multimodal]
+  preview: /images/publications/character-animation.webp
+  preview_alt: "Survey map of generative AI for character animation: motion, texture, gesture, face, avatar, object, image, and expression."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+    - name: Omid Ghahroodi
+    - name: Pardis Sadat Zahraei
+    - name: Hossein Behzadasl
+    - name: Alireza Mirrokni
+    - name: Mobina Salimipanah
+    - name: Arash Rasouli
+    - name: Bahar Behzadipour
+    - name: Sara Azarnoush
+    - name: Benyamin Maleki
+    - name: Erfan Sadraiye
+    - name: Kiarash Kiani Feriz
+    - name: Mahdi Teymouri Nahad
+    - name: Ali Moghadasi
+    - name: Abolfazl Eshagh Abianeh
+    - name: Nizi Nazar
+    - name: Hamid R. Rabiee
+    - name: Mahdieh Soleymani Baghshah
+    - name: Meisam Ahmadi
+    - name: Ehsaneddin Asgari
+  links:
+    - label: arXiv
+      icon: arxiv
+      url: https://arxiv.org/abs/2504.19056
+    - label: Code
+      icon: code
+      url: https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey
+    - label: Project
+      icon: project
+      url: https://generative-ai-for-character-animation.github.io/
+
+- id: abootorabi2024emotion
+  title: "AIMA at SemEval-2024 Task 10: History-Based Emotion Recognition in Hindi-English Code-Mixed Conversations"
+  status: published
+  abbr: SemEval
+  venue_class: semeval
+  kind: workshop
+  venue: "SemEval at NAACL 2024"
+  detail: "at NAACL"
+  year: 2024
+  month: June
+  topics: [nlp]
+  preview: /images/publications/semeval-2024-emotion.webp
+  preview_alt: "Three history-based architectures for emotion recognition in code-mixed conversations."
+  authors:
+    - name: Mohammad Mahdi Abootorabi
+    - name: Nona Ghazizadeh
+    - name: Seyed Arshan Dalili
+    - name: Alireza Ghahramani Kure
+    - name: Mahshid Dehghani
+    - name: Ehsaneddin Asgari
+  links:
+    - label: Paper
+      icon: paper
+      url: https://aclanthology.org/2024.semeval-1.244/
+
+- id: kure2024emotioncause
+  title: "AIMA at SemEval-2024 Task 3: Simple Yet Powerful Emotion Cause Pair Analysis"
+  status: published
+  abbr: SemEval
+  venue_class: semeval
+  kind: workshop
+  venue: "SemEval at NAACL 2024"
+  detail: "at NAACL"
+  year: 2024
+  month: June
+  topics: [nlp, multimodal]
+  preview: /images/publications/semeval-2024-cause.webp
+  preview_alt: "Emotion-cause model: embedding extraction, cause-pair classification, and cause-span extraction."
+  authors:
+    - name: Alireza Ghahramani Kure
+    - name: Mahshid Dehghani
+    - name: Mohammad Mahdi Abootorabi
+    - name: Nona Ghazizadeh
+    - name: Seyed Arshan Dalili
+    - name: Ehsaneddin Asgari
+  links:
+    - label: Paper
+      icon: paper
+      url: https://aclanthology.org/2024.semeval-1.243/

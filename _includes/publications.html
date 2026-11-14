@@ -1,0 +1,72 @@
+{% assign me_name = site.author.name %}
+<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+<div id="publications" class="publications">
+  <h2 id="publications-heading">Publications</h2>
+  <p class="pub-lead">Selected papers are highlighted first. The complete list is grouped by year, newest first. Filled badges are published venues; outlined badges are preprints or under review. <sup title="Equal contribution">*</sup> Equal contribution.</p>
+
+  {% assign has_selected = false %}
+  {% for pub in site.data.publications %}
+    {% if pub.selected or pub.highlight %}
+      {% assign has_selected = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_selected %}
+    <section class="pub-selected-wrap" aria-labelledby="selected-heading">
+      <h3 id="selected-heading">Selected publications</h3>
+      <div class="pub-selected">
+        {% for pub in site.data.publications %}
+          {% if pub.selected or pub.highlight %}
+            {% include pub_entry.html pub=pub variant="card" me_name=me_name %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <div class="pub-list-head">
+    <h3 id="all-publications">All publications</h3>
+    <div class="pub-filters" role="group" aria-label="Filter publications by topic">
+      <button type="button" class="pub-chip is-active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="pub-chip" data-filter="topic:medical" aria-pressed="false">Medical</button>
+      <button type="button" class="pub-chip" data-filter="topic:multimodal" aria-pressed="false">Multimodal</button>
+      <button type="button" class="pub-chip" data-filter="topic:nlp" aria-pressed="false">NLP</button>
+      <button type="button" class="pub-chip" data-filter="topic:survey" aria-pressed="false">Surveys</button>
+      <button type="button" class="pub-chip" data-filter="topic:ml" aria-pressed="false">ML</button>
+      <button type="button" class="pub-chip" data-filter="status:unpublished" aria-pressed="false">Preprint &amp; review</button>
+    </div>
+  </div>
+  <p class="pub-empty" hidden>No papers match this filter.</p>
+
+  {% assign year_list = "|" %}
+  {% for pub in site.data.publications %}
+    {% assign y = pub.year | append: "" %}
+    {% assign token = y | prepend: "|" | append: "|" %}
+    {% unless year_list contains token %}
+      {% assign year_list = year_list | append: y | append: "|" %}
+    {% endunless %}
+  {% endfor %}
+  {% assign years = year_list | split: "|" | sort | reverse %}
+
+  {% for year in years %}
+    {% if year != "" %}
+      {% assign count = 0 %}
+      {% for pub in site.data.publications %}
+        {% assign y = pub.year | append: "" %}
+        {% if y == year %}
+          {% assign count = count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      <section class="pub-year" id="year-{{ year }}" data-year="{{ year }}">
+        <h3>{{ year }} <span class="pub-count">{{ count }} {% if count == 1 %}paper{% else %}papers{% endif %}</span></h3>
+        {% for pub in site.data.publications %}
+          {% assign y = pub.year | append: "" %}
+          {% if y == year %}
+            {% include pub_entry.html pub=pub variant="row" me_name=me_name %}
+          {% endif %}
+        {% endfor %}
+      </section>
+    {% endif %}
+  {% endfor %}
+</div>
+<script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
