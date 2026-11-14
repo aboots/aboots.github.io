@@ -7,7 +7,7 @@
 # Optional fields:
 #   preview: "/images/publications/example.webp"  teaser on a featured card and a thumbnail in the year list
 #   preview_alt: "What the figure shows"
-#   month, detail, note, venue       venue is the booktitle used for BibTeX
+#   month, detail, note, venue
 #   kind: findings | workshop        adds a second pill; omit for a main venue
 #   status: published | under_review | preprint
 #   venue_class: neurips, emnlp, acl, miccai, mlhc, iclr, ipcai, acm, ecir,
@@ -15,7 +15,6 @@
 #   topics: medical, multimodal, nlp, survey, ml
 #   equal: true                      on an author, prints the equal-contribution *
 #   me: true                         bold an author whose name is not site.author.name
-#   bibtex: |                        optional full override of the generated BibTeX
 #   links: label, icon, url
 #     icons: paper, arxiv, code, project, dataset, poster, models, openreview
 #
@@ -78,6 +77,15 @@
     - label: arXiv
       icon: arxiv
       url: https://arxiv.org/abs/2605.30608
+    - label: Code
+      icon: code
+      url: https://github.com/aboots/Semantic_Motion_Anchors
+    - label: Project
+      icon: project
+      url: https://semantic-motion-anchors.github.io/
+    - label: Dataset
+      icon: dataset
+      url: https://huggingface.co/datasets/aboots/SEMANTIX
 
 - id: abootorabi2026steering
   title: "Steering Geometry: Validating Human Value Geometry in LLM Steering Space"
@@ -113,12 +121,12 @@
 
 - id: abootorabi2026prototta
   title: "ProtoTTA: Prototype-Guided Test-Time Adaptation"
-  status: published
-  abbr: ICLR
-  venue_class: iclr
-  kind: workshop
-  venue: "Third Workshop on Test-Time Updates (Main Track) at ICLR 2026, submitted to ICLR 2027"
-  detail: "Third Workshop on Test-Time Updates (Main Track) at ICLR 2026, submitted to ICLR 2027"
+  selected: true
+  status: under_review
+  abbr: "Submitted to ICLR 2027"
+  venue_class: review
+  venue: "Submitted to ICLR 2027"
+  detail: "Third Workshop on Test-Time Updates (Main Track) at ICLR 2026"
   year: 2026
   month: April
   topics: [ml]
@@ -168,6 +176,7 @@
 
 - id: abootorabi2026bloombench
   title: "Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models"
+  selected: true
   status: published
   abbr: ACL
   venue_class: acl

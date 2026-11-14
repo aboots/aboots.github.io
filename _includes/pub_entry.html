@@ -6,47 +6,24 @@
   {% assign is_selected = true %}
 {% endif %}
 
-{% assign bib_url = "" %}
-{% assign arxiv_id = "" %}
+{% assign primary_url = "" %}
 {% for link in pub.links %}
-  {% if link.icon == "paper" and bib_url == "" %}
-    {% assign bib_url = link.url %}
+  {% if link.icon == "paper" and primary_url == "" %}
+    {% assign primary_url = link.url %}
   {% endif %}
-  {% if link.url contains "arxiv.org/abs/" %}
-    {% assign arxiv_id = link.url | split: "/abs/" | last %}
-    {% if bib_url == "" %}
-      {% assign bib_url = link.url %}
-    {% endif %}
+  {% if primary_url == "" and link.url contains "arxiv.org/abs/" %}
+    {% assign primary_url = link.url %}
   {% endif %}
 {% endfor %}
-{% if bib_url == "" and pub.links.first %}
-  {% assign bib_url = pub.links.first.url %}
+{% if primary_url == "" and pub.links.first %}
+  {% assign primary_url = pub.links.first.url %}
 {% endif %}
-
-{% capture bib_authors %}{% for author in pub.authors %}{{ author.name }}{% unless forloop.last %} and {% endunless %}{% endfor %}{% endcapture %}
-{% if pub.status == "preprint" or pub.status == "under_review" %}
-  {% assign bib_type = "misc" %}
-{% else %}
-  {% assign bib_type = "inproceedings" %}
-{% endif %}
-{% capture bibtex %}{% if pub.bibtex %}{{ pub.bibtex }}{% else %}@{{ bib_type }}{ {{- pub.id -}},
-  title = { {{- pub.title -}} },
-  author = { {{- bib_authors -}} },
-  year = { {{- pub.year -}} }{% if pub.venue %},
-  booktitle = { {{- pub.venue -}} }{% endif %}{% if pub.month %},
-  month = { {{- pub.month -}} }{% endif %}{% if arxiv_id != "" %},
-  eprint = { {{- arxiv_id -}} },
-  archiveprefix = {arXiv}{% endif %}{% if bib_url != "" %},
-  url = { {{- bib_url -}} }{% endif %}{% if pub.status == "under_review" %},
-  note = {Under review}{% elsif pub.status == "preprint" %},
-  note = {Preprint}{% endif %}
-}{% endif %}{% endcapture %}
 
 {% assign topic_str = pub.topics | join: " " %}
 <article class="pub-entry {% if variant == 'card' %}pub-card{% else %}pub-row{% endif %}{% if is_selected %} is-selected{% endif %}{% if pub.preview %} has-teaser{% endif %}" data-topics="{{ topic_str }}" data-status="{{ pub.status }}" style="--pub-accent: var(--venue-{{ pub.venue_class | default: 'default' }});">
   {% if variant == "card" and pub.preview %}
-    {% if bib_url != "" %}
-      <a class="pub-teaser" href="{{ bib_url }}">
+    {% if primary_url != "" %}
+      <a class="pub-teaser" href="{{ primary_url }}">
         <img src="{{ pub.preview | relative_url }}" alt="{{ pub.preview_alt | default: pub.title }}">
       </a>
     {% else %}
@@ -56,8 +33,8 @@
     {% endif %}
   {% endif %}
   {% if variant == "row" and pub.preview %}
-    {% if bib_url != "" %}
-      <a class="pub-thumb" href="{{ bib_url }}" tabindex="-1" aria-hidden="true">
+    {% if primary_url != "" %}
+      <a class="pub-thumb" href="{{ primary_url }}" tabindex="-1" aria-hidden="true">
         <img src="{{ pub.preview | relative_url }}" alt="">
       </a>
     {% else %}
@@ -69,7 +46,7 @@
   <div class="pub-body">
     <div class="pub-meta">
       {% if pub.status == "under_review" %}
-        <span class="pub-badge is-outline">Under review</span>
+        <span class="pub-badge is-outline">{% if pub.abbr %}{{ pub.abbr }}{% else %}Under review{% endif %}</span>
       {% elsif pub.status == "preprint" %}
         <span class="pub-badge is-outline">arXiv preprint</span>
       {% elsif pub.abbr %}
@@ -91,7 +68,7 @@
         <span class="pub-detail">{{ pub.detail }}</span>
       {% endif %}
     </div>
-    <h4 class="pub-title">{% if bib_url != "" %}<a href="{{ bib_url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4>
+    <h4 class="pub-title">{% if primary_url != "" %}<a href="{{ primary_url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4>
     <p class="pub-authors">
       {%- for author in pub.authors -%}
         {%- if forloop.first == false -%}
@@ -135,12 +112,7 @@
         {% endcase %}
         <a class="pub-btn" href="{{ link.url }}" aria-label="{{ link.label }}: {{ pub.title }}"><i class="{{ icon_class }}" aria-hidden="true"></i><span>{{ link.label }}</span></a>
       {% endfor %}
-      <button type="button" class="pub-btn pub-bib-toggle" aria-expanded="false"><i class="fas fa-quote-left" aria-hidden="true"></i><span>BibTeX</span></button>
     </div>
-      <div class="pub-bibtex" hidden>
-        <button type="button" class="pub-copy">Copy</button>
-        <pre class="pub-bib-code">{{ bibtex }}</pre>
-      </div>
     </div>
   </div>
 </article>

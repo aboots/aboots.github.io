@@ -1,9 +1,6 @@
 {% assign me_name = site.author.name %}
 <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
 <div id="publications" class="publications">
-  <h2 id="publications-heading">Publications</h2>
-  <p class="pub-lead">Selected papers are highlighted first. The complete list is grouped by year, newest first. Filled badges are published venues; outlined badges are preprints or under review. <sup title="Equal contribution">*</sup> Equal contribution.</p>
-
   {% assign has_selected = false %}
   {% for pub in site.data.publications %}
     {% if pub.selected or pub.highlight %}

@@ -21,30 +21,19 @@
   --pub-navy: #0f2b46;
 }
 
-.publications h2 {
-  margin: 0.15rem 0 0.45rem;
+.archive > .page__title {
+  margin: 0.15rem 0 0.9rem;
   padding-bottom: 0.35rem;
-  color: var(--pub-navy);
+  color: #0f2b46;
   font-size: 1.55rem;
-  border-bottom: 2px solid var(--pub-navy);
+  line-height: 1.2;
+  border-bottom: 2px solid #0f2b46;
 }
 
 .publications h3 {
   margin: 0;
   color: var(--pub-navy);
   font-size: 1.2rem;
-}
-
-.publications .pub-lead {
-  margin: 0.55rem 0 1rem;
-  color: #3e4a53;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.publications .pub-lead sup {
-  color: var(--pub-navy);
-  font-weight: 700;
 }
 
 .publications .pub-selected-wrap {
@@ -103,8 +92,7 @@
 }
 
 .publications .pub-chip:focus-visible,
-.publications .pub-btn:focus-visible,
-.publications .pub-copy:focus-visible {
+.publications .pub-btn:focus-visible {
   outline: 2px solid #52adc8;
   outline-offset: 2px;
 }
@@ -405,45 +393,6 @@
   line-height: 1;
 }
 
-.publications .pub-bibtex {
-  margin-top: 0.45rem;
-  padding: 0.55rem 0.65rem 0.65rem;
-  border: 1px solid var(--pub-line);
-  border-radius: 8px;
-  background: #f7f9fb;
-}
-
-.publications .pub-copy {
-  margin: 0 0 0.4rem;
-  padding: 0.12rem 0.5rem;
-  border: 1px solid #d3dde6;
-  border-radius: 999px;
-  background: #fff;
-  color: #16324f;
-  font-family: inherit;
-  font-size: 0.72rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.publications .pub-copy:hover {
-  border-color: #52adc8;
-  background: #f3fafc;
-}
-
-.publications pre.pub-bib-code {
-  margin: 0;
-  padding: 0;
-  max-height: 220px;
-  overflow: auto;
-  border: 0;
-  background: transparent;
-  color: #243038;
-  font-size: 0.74rem;
-  line-height: 1.45;
-  white-space: pre;
-}
-
 .publications .pub-sr {
   position: absolute;
   width: 1px;
@@ -467,7 +416,7 @@
 }
 
 @media (max-width: 640px) {
-  .publications h2 {
+  .archive > .page__title {
     font-size: 1.35rem;
   }
 
@@ -509,13 +458,7 @@
 }
 
 @media print {
-  .publications .pub-filters,
-  .publications .pub-copy {
-    display: none;
-  }
-
-  .publications .pub-bib-toggle,
-  .publications .pub-bibtex {
+  .publications .pub-filters {
     display: none;
   }
 }
